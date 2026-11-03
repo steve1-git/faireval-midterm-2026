@@ -1,6 +1,6 @@
 LLMBar-manual-038
 
-返回证据索引 (../../README.md)
+[返回证据索引](../../README.md)
 
 # LLMBar-manual-038 / Qwen2.5-72B-Instruct
 
@@ -62,7 +62,7 @@ Assistant 2, however, provided an analysis that is less accurate and less logica
 ````````
 
 
-原始JSONL (../../raw/72B/part_000.jsonl) 第409行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_000.jsonl) 第409行（含完整token IDs与采样参数）
 
 ### vanilla · 区组0 · P-1_L-1_S-1 · draw1 · completed_valid
 
@@ -80,7 +80,7 @@ Assistant 2, on the other hand, provides a more accurate and logical interpretat
 ````````
 
 
-原始JSONL (../../raw/72B/part_000.jsonl) 第410行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_000.jsonl) 第410行（含完整token IDs与采样参数）
 
 ### ec · 区组0 · P+1_L+1_S+1 · draw1 · completed_valid
 
@@ -100,7 +100,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_000.jsonl) 第411行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_000.jsonl) 第411行（含完整token IDs与采样参数）
 
 ### ec · 区组0 · P-1_L-1_S-1 · draw1 · completed_valid
 
@@ -120,7 +120,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_000.jsonl) 第412行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_000.jsonl) 第412行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S+1 · draw2 · completed_valid
 
@@ -140,7 +140,7 @@ Score of the Assistant 2: 3
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第73行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第73行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S-1 · draw8 · completed_valid
 
@@ -162,7 +162,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第74行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第74行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L-1_S-1 · draw2 · completed_valid
 
@@ -182,7 +182,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第75行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第75行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S-1 · draw3 · completed_valid
 
@@ -202,7 +202,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第76行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第76行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S-1 · draw2 · completed_valid
 
@@ -224,7 +224,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第77行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第77行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S+1 · draw6 · completed_valid
 
@@ -244,7 +244,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第78行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第78行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S-1 · draw1 · completed_valid
 
@@ -266,7 +266,7 @@ Score of the Assistant 1: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第79行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第79行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S-1 · draw5 · completed_valid
 
@@ -288,7 +288,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第80行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第80行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S+1 · draw4 · completed_valid
 
@@ -306,7 +306,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第81行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第81行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S+1 · draw5 · completed_valid
 
@@ -328,7 +328,7 @@ Score of the Assistant 2: 6
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第82行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第82行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L+1_S-1 · draw1 · completed_valid
 
@@ -348,7 +348,7 @@ Score of the Assistant 1: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第83行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第83行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S-1 · draw1 · completed_valid
 
@@ -369,7 +369,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第84行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第84行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S+1 · draw1 · completed_valid
 
@@ -389,7 +389,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第85行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第85行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S+1 · draw7 · completed_valid
 
@@ -407,7 +407,7 @@ Score of the Assistant 2: 3
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第86行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第86行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S-1 · draw6 · completed_valid
 
@@ -430,7 +430,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第87行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第87行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S-1 · draw7 · completed_valid
 
@@ -450,7 +450,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第88行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第88行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S+1 · draw3 · completed_valid
 
@@ -473,7 +473,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第89行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第89行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L-1_S-1 · draw1 · completed_valid
 
@@ -495,7 +495,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第90行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第90行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L+1_S+1 · draw1 · completed_valid
 
@@ -517,7 +517,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第91行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第91行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L+1_S+1 · draw8 · completed_valid
 
@@ -538,7 +538,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第92行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第92行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S+1 · draw1 · completed_valid
 
@@ -560,7 +560,7 @@ Score of the Assistant 1: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第93行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第93行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P+1_L-1_S+1 · draw1 · completed_valid
 
@@ -580,7 +580,7 @@ Score of the Assistant 1: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第94行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第94行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L-1_S-1 · draw4 · completed_valid
 
@@ -604,7 +604,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第95行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第95行（含完整token IDs与采样参数）
 
 ### mc · 区组1 · P-1_L+1_S+1 · draw2 · completed_valid
 
@@ -622,7 +622,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_006.jsonl) 第96行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_006.jsonl) 第96行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L+1_S-1 · draw1 · completed_valid
 
@@ -644,7 +644,7 @@ Score of the Assistant 1: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第145行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第145行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L+1_S+1 · draw1 · completed_valid
 
@@ -664,7 +664,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第146行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第146行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S+1 · draw6 · completed_valid
 
@@ -684,7 +684,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第147行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第147行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S-1 · draw5 · completed_valid
 
@@ -709,7 +709,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第148行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第148行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S-1 · draw1 · completed_valid
 
@@ -727,7 +727,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第149行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第149行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S+1 · draw4 · completed_valid
 
@@ -747,7 +747,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第150行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第150行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S+1 · draw1 · completed_valid
 
@@ -769,7 +769,7 @@ Score of the Assistant 1: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第151行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第151行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S+1 · draw5 · completed_valid
 
@@ -789,7 +789,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第152行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第152行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S+1 · draw7 · completed_valid
 
@@ -815,7 +815,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第153行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第153行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S-1 · draw6 · completed_valid
 
@@ -837,7 +837,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第154行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第154行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S+1 · draw1 · completed_valid
 
@@ -859,7 +859,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第155行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第155行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S+1 · draw8 · completed_valid
 
@@ -880,7 +880,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第156行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第156行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L+1_S+1 · draw2 · completed_valid
 
@@ -902,7 +902,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第157行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第157行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S+1 · draw3 · completed_valid
 
@@ -922,7 +922,7 @@ Score of the Assistant 2: 3
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第158行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第158行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S-1 · draw7 · completed_valid
 
@@ -942,7 +942,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第159行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第159行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S-1 · draw1 · completed_valid
 
@@ -964,7 +964,7 @@ Score of the Assistant 1: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第160行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第160行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L-1_S-1 · draw2 · completed_valid
 
@@ -988,7 +988,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第161行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第161行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L+1_S+1 · draw2 · completed_valid
 
@@ -1010,7 +1010,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第162行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第162行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S-1 · draw2 · completed_valid
 
@@ -1028,7 +1028,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第163行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第163行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S-1 · draw4 · completed_valid
 
@@ -1048,7 +1048,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第164行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第164行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L-1_S+1 · draw1 · completed_valid
 
@@ -1072,7 +1072,7 @@ Score of the Assistant 1: 6
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第165行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第165行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S-1 · draw8 · completed_valid
 
@@ -1096,7 +1096,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第166行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第166行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P+1_L-1_S-1 · draw1 · completed_valid
 
@@ -1114,7 +1114,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第167行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第167行（含完整token IDs与采样参数）
 
 ### mc · 区组2 · P-1_L-1_S-1 · draw3 · completed_valid
 
@@ -1136,7 +1136,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_012.jsonl) 第168行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_012.jsonl) 第168行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S-1 · draw3 · completed_valid
 
@@ -1156,7 +1156,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第289行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第289行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S+1 · draw3 · completed_valid
 
@@ -1178,7 +1178,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第290行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第290行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L-1_S+1 · draw1 · completed_valid
 
@@ -1203,7 +1203,7 @@ Score of the Assistant 1: 6
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第291行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第291行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S+1 · draw1 · completed_valid
 
@@ -1225,7 +1225,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第292行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第292行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S-1 · draw5 · completed_valid
 
@@ -1245,7 +1245,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第293行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第293行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S-1 · draw4 · completed_valid
 
@@ -1267,7 +1267,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第294行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第294行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S-1 · draw1 · completed_valid
 
@@ -1287,7 +1287,7 @@ Score of the Assistant 1: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第295行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第295行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L+1_S+1 · draw2 · completed_valid
 
@@ -1312,7 +1312,7 @@ Score of the Assistant 2: 3
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第296行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第296行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L-1_S-1 · draw1 · completed_valid
 
@@ -1334,7 +1334,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第297行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第297行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S+1 · draw5 · completed_valid
 
@@ -1354,7 +1354,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第298行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第298行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L+1_S-1 · draw1 · completed_valid
 
@@ -1378,7 +1378,7 @@ Score of the Assistant 1: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第299行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第299行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S+1 · draw1 · completed_valid
 
@@ -1398,7 +1398,7 @@ Score of the Assistant 1: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第300行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第300行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S-1 · draw8 · completed_valid
 
@@ -1422,7 +1422,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第301行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第301行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L+1_S+1 · draw1 · completed_valid
 
@@ -1446,7 +1446,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第302行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第302行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S-1 · draw7 · completed_valid
 
@@ -1470,7 +1470,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第303行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第303行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S-1 · draw6 · completed_valid
 
@@ -1494,7 +1494,7 @@ Score of the Assistant 2: 8
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第304行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第304行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L-1_S-1 · draw2 · completed_valid
 
@@ -1524,7 +1524,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第305行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第305行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S+1 · draw7 · completed_valid
 
@@ -1542,7 +1542,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第306行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第306行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S+1 · draw4 · completed_valid
 
@@ -1564,7 +1564,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第307行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第307行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S-1 · draw2 · completed_valid
 
@@ -1592,7 +1592,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第308行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第308行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S+1 · draw6 · completed_valid
 
@@ -1618,7 +1618,7 @@ Score of the Assistant 2: 5
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第309行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第309行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P-1_L-1_S-1 · draw1 · completed_valid
 
@@ -1642,7 +1642,7 @@ Score of the Assistant 2: 9
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第310行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第310行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S+1 · draw2 · completed_valid
 
@@ -1662,7 +1662,7 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第311行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第311行（含完整token IDs与采样参数）
 
 ### mc · 区组3 · P+1_L+1_S+1 · draw8 · completed_valid
 
@@ -1682,4 +1682,4 @@ Score of the Assistant 2: 4
 ````````
 
 
-原始JSONL (../../raw/72B/part_018.jsonl) 第312行（含完整token IDs与采样参数）
+[原始JSONL](../../raw/72B/part_018.jsonl) 第312行（含完整token IDs与采样参数）
