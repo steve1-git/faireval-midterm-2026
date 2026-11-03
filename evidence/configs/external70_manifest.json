@@ -1,0 +1,457 @@
+{
+  "status": "selected before any new judge outputs",
+  "source": "https://github.com/princeton-nlp/LLMBar",
+  "n_external": 70,
+  "quota": {
+    "natural": 35,
+    "neighbor": 9,
+    "gptinst": 9,
+    "gptout": 9,
+    "manual": 8
+  },
+  "normalization": "NFKC casefold whitespace normalization; distinct instructions and no exact normalized overlap with original FairEval80",
+  "sources": {
+    "natural": {
+      "file_sha256": "fb64b5312d8d5de01394b5953f1990dcc42b02319e627c28ff046c492f4468a4",
+      "n_source": 100
+    },
+    "neighbor": {
+      "file_sha256": "61f8c74d70aaa7e86815c1a070eb07af2006b88f4cd13b1e65dd9cbba0c82725",
+      "n_source": 134
+    },
+    "gptinst": {
+      "file_sha256": "23afc4ae91a7b5e20ea433a8b5b5eacce86c392c572d044a8c251d27516731fe",
+      "n_source": 92
+    },
+    "gptout": {
+      "file_sha256": "770068ff681f978e2adbbc7d677c03482946fb263a1b99ee173790e1e3344e02",
+      "n_source": 47
+    },
+    "manual": {
+      "file_sha256": "3d32e1e9e461aed3ad131a9966105d9c09e7efe5c69d87b8443e431bffe8837a",
+      "n_source": 46
+    }
+  },
+  "rows": [
+    {
+      "external_id": "LLMBar-natural-096",
+      "subset": "natural",
+      "source_row_zero_based": 96,
+      "instruction_sha256": "d8499e603e4e834e68d937dc99defbb19b8be7c385e63b447ae96690cf94a775"
+    },
+    {
+      "external_id": "LLMBar-natural-065",
+      "subset": "natural",
+      "source_row_zero_based": 65,
+      "instruction_sha256": "03d53e0c928eebf47163ad93c5d67d100c8dff2ca27f71ad7907ed5ffcecc4b4"
+    },
+    {
+      "external_id": "LLMBar-natural-036",
+      "subset": "natural",
+      "source_row_zero_based": 36,
+      "instruction_sha256": "1966b93985c5047383e587adff460983bccfda47df114df31f991ecca3a66376"
+    },
+    {
+      "external_id": "LLMBar-natural-056",
+      "subset": "natural",
+      "source_row_zero_based": 56,
+      "instruction_sha256": "c1f699752b7f18650fa3027045ea6eac49370f79894f49414f39b2aaf01c1b91"
+    },
+    {
+      "external_id": "LLMBar-natural-083",
+      "subset": "natural",
+      "source_row_zero_based": 83,
+      "instruction_sha256": "62b762464144ad94effe8e111886091e2a2cba47174386884421f9855a0bbacf"
+    },
+    {
+      "external_id": "LLMBar-natural-025",
+      "subset": "natural",
+      "source_row_zero_based": 25,
+      "instruction_sha256": "f5e22f1ebd51b9595a9c50cba4cccb6fd2d80796abc5d93559e4b035a7ec3062"
+    },
+    {
+      "external_id": "LLMBar-natural-028",
+      "subset": "natural",
+      "source_row_zero_based": 28,
+      "instruction_sha256": "455fd138fc50656e9f574f34d4c30d88ccf5a54df471db21bef98ce035ccd3d9"
+    },
+    {
+      "external_id": "LLMBar-natural-099",
+      "subset": "natural",
+      "source_row_zero_based": 99,
+      "instruction_sha256": "4e2533340feb0c23b54107e93df6f70f16a4b37f825074ac8a040044d13e9ca9"
+    },
+    {
+      "external_id": "LLMBar-natural-041",
+      "subset": "natural",
+      "source_row_zero_based": 41,
+      "instruction_sha256": "327bb2107a6da28ecb676c57f3ae96b916f0ee7aca8a4d034f0bee6786b5794b"
+    },
+    {
+      "external_id": "LLMBar-natural-055",
+      "subset": "natural",
+      "source_row_zero_based": 55,
+      "instruction_sha256": "548df9691b680df6ccc40defeb503e87d69c75dfd077fe71fd24162089197284"
+    },
+    {
+      "external_id": "LLMBar-natural-007",
+      "subset": "natural",
+      "source_row_zero_based": 7,
+      "instruction_sha256": "0f2d28bc339224728431fc4748e0cf8b2bcf812f90f725cdceef4cf5dadb129e"
+    },
+    {
+      "external_id": "LLMBar-natural-059",
+      "subset": "natural",
+      "source_row_zero_based": 59,
+      "instruction_sha256": "66fb19eaab4796e0362b43c08b3714fe4402202d3665683f973db41c870d85b3"
+    },
+    {
+      "external_id": "LLMBar-natural-042",
+      "subset": "natural",
+      "source_row_zero_based": 42,
+      "instruction_sha256": "a3f1ec8738b8d6cb7a24b31589e64727bf1cf9259493f815dd05b45577a72e6d"
+    },
+    {
+      "external_id": "LLMBar-natural-091",
+      "subset": "natural",
+      "source_row_zero_based": 91,
+      "instruction_sha256": "b407da2e0da280303ee00758962ae85ee9994c8d0bab4700b6b5749a8b75b62c"
+    },
+    {
+      "external_id": "LLMBar-natural-077",
+      "subset": "natural",
+      "source_row_zero_based": 77,
+      "instruction_sha256": "21b91a53545282b19aa09dcd019b1a9c03657aee759e7723a494f3ff6d896d35"
+    },
+    {
+      "external_id": "LLMBar-natural-040",
+      "subset": "natural",
+      "source_row_zero_based": 40,
+      "instruction_sha256": "4b763b4ae91b5383ffdbe9231a19ed86855748a793287cfc4aeb1efb300782be"
+    },
+    {
+      "external_id": "LLMBar-natural-038",
+      "subset": "natural",
+      "source_row_zero_based": 38,
+      "instruction_sha256": "f41dbbacdbf05000e7fe23b963965a6ffae52800a24c8f885ee8f8b57822ad15"
+    },
+    {
+      "external_id": "LLMBar-natural-034",
+      "subset": "natural",
+      "source_row_zero_based": 34,
+      "instruction_sha256": "1fff3016e806b741f136949d2575435d7b772f903483ca97d4946dd35d60a81e"
+    },
+    {
+      "external_id": "LLMBar-natural-017",
+      "subset": "natural",
+      "source_row_zero_based": 17,
+      "instruction_sha256": "abef9415e336addffcb6e74cc84d6e1d598d324f58423427dddd58005bb1be0a"
+    },
+    {
+      "external_id": "LLMBar-natural-024",
+      "subset": "natural",
+      "source_row_zero_based": 24,
+      "instruction_sha256": "c0db3566933362a5e36a8e861e24d942e636ab7b3be61045c0b704a180df75e0"
+    },
+    {
+      "external_id": "LLMBar-natural-016",
+      "subset": "natural",
+      "source_row_zero_based": 16,
+      "instruction_sha256": "6621d95d2cb6db1db41b5f22486da040f00a0689117d38c60ee0d1011ecc3c24"
+    },
+    {
+      "external_id": "LLMBar-natural-079",
+      "subset": "natural",
+      "source_row_zero_based": 79,
+      "instruction_sha256": "3d7dcf51b802692b28e7fe66a94501ef7e31dd0cd8695515e5529b13eb7de64c"
+    },
+    {
+      "external_id": "LLMBar-natural-092",
+      "subset": "natural",
+      "source_row_zero_based": 92,
+      "instruction_sha256": "6d277170b75576f3d897caf0e9ec114815648be0597b6fb7c797c403fab52076"
+    },
+    {
+      "external_id": "LLMBar-natural-005",
+      "subset": "natural",
+      "source_row_zero_based": 5,
+      "instruction_sha256": "eb64fd134499cad453331505786848017c8ede03d1a81dd17919b9e9eba83a74"
+    },
+    {
+      "external_id": "LLMBar-natural-019",
+      "subset": "natural",
+      "source_row_zero_based": 19,
+      "instruction_sha256": "db1e85d1c318248e6d135f2a244349540c90508bdf32b8a9cc38dda71071ec86"
+    },
+    {
+      "external_id": "LLMBar-natural-044",
+      "subset": "natural",
+      "source_row_zero_based": 44,
+      "instruction_sha256": "ac91e99ba2b754ae1e42e50211beddf31f479ebf4a9a1ba52b4956b87b2a87d6"
+    },
+    {
+      "external_id": "LLMBar-natural-076",
+      "subset": "natural",
+      "source_row_zero_based": 76,
+      "instruction_sha256": "897f9ca9dd9257de404771f5be8010172dd341c69666b930d3988b6928d39291"
+    },
+    {
+      "external_id": "LLMBar-natural-006",
+      "subset": "natural",
+      "source_row_zero_based": 6,
+      "instruction_sha256": "ffffb76b66c99877e85dadaccbeb8426e5d4da92a7738a83b64aa1e53a2913f1"
+    },
+    {
+      "external_id": "LLMBar-natural-095",
+      "subset": "natural",
+      "source_row_zero_based": 95,
+      "instruction_sha256": "01f7cb84ed103bd1a24e43965295db6fdef01d108c602a429c019c150d092557"
+    },
+    {
+      "external_id": "LLMBar-natural-051",
+      "subset": "natural",
+      "source_row_zero_based": 51,
+      "instruction_sha256": "e2c4dfdcaf3eda3e534aac8c394494f70716537452c493eaa48e1de8a5444203"
+    },
+    {
+      "external_id": "LLMBar-natural-053",
+      "subset": "natural",
+      "source_row_zero_based": 53,
+      "instruction_sha256": "e5c2ce5ae2245cbd971c283560477d22804820dec7c9b5c2cc59b71f8750c6bd"
+    },
+    {
+      "external_id": "LLMBar-natural-026",
+      "subset": "natural",
+      "source_row_zero_based": 26,
+      "instruction_sha256": "9e6591d29651a3d1bcc18bba17e925ac8b8bf1e9d9251db7ac8550d906257584"
+    },
+    {
+      "external_id": "LLMBar-natural-003",
+      "subset": "natural",
+      "source_row_zero_based": 3,
+      "instruction_sha256": "5fc7c2a331e3b3f81251dedb9068ee5713f105746bbddfcf2288c8c9cbea8310"
+    },
+    {
+      "external_id": "LLMBar-natural-018",
+      "subset": "natural",
+      "source_row_zero_based": 18,
+      "instruction_sha256": "bc372c65fe4aebadd53e0e290e7198694876d34ad31b7331220c4472ec1b6576"
+    },
+    {
+      "external_id": "LLMBar-natural-085",
+      "subset": "natural",
+      "source_row_zero_based": 85,
+      "instruction_sha256": "f53c2006957fcac6c0ab1b1b736b0f04a0d0930f057b03653baf14ec3aa1c60b"
+    },
+    {
+      "external_id": "LLMBar-neighbor-037",
+      "subset": "neighbor",
+      "source_row_zero_based": 37,
+      "instruction_sha256": "a8daa42edffc23fa447a056654e2e87f92b88170a54f4a772d91f14cdce5f7c0"
+    },
+    {
+      "external_id": "LLMBar-neighbor-119",
+      "subset": "neighbor",
+      "source_row_zero_based": 119,
+      "instruction_sha256": "7a86cb91e337e8b60f5cd71c0a23f7e84bf228693c3bdcd8b43e16862128c77f"
+    },
+    {
+      "external_id": "LLMBar-neighbor-077",
+      "subset": "neighbor",
+      "source_row_zero_based": 77,
+      "instruction_sha256": "a93a6809ca9a81132315fa1fa9bc80452aa2943d1388a95f698e2adf89346261"
+    },
+    {
+      "external_id": "LLMBar-neighbor-094",
+      "subset": "neighbor",
+      "source_row_zero_based": 94,
+      "instruction_sha256": "ba7847b492a3f8663100c4b8f76f874d30c203fcbb1b3728e2af34eaf4274654"
+    },
+    {
+      "external_id": "LLMBar-neighbor-027",
+      "subset": "neighbor",
+      "source_row_zero_based": 27,
+      "instruction_sha256": "2f37dba2b02d39746a860f3c0f8d21f31375aad15f5065e550c6536f578c37b1"
+    },
+    {
+      "external_id": "LLMBar-neighbor-128",
+      "subset": "neighbor",
+      "source_row_zero_based": 128,
+      "instruction_sha256": "e8e8dca11ca050e9657e1247501c1bfbbca37c21182175f78b781d5ce6079ea3"
+    },
+    {
+      "external_id": "LLMBar-neighbor-101",
+      "subset": "neighbor",
+      "source_row_zero_based": 101,
+      "instruction_sha256": "fda1b21a727e5a90caae7b1d555b72ac3ace46901452979358a7dd9eb75531cd"
+    },
+    {
+      "external_id": "LLMBar-neighbor-021",
+      "subset": "neighbor",
+      "source_row_zero_based": 21,
+      "instruction_sha256": "7625a809bb24cbb0b69c47d465eeeb5dbe1009c697d05d3d90355599804795c2"
+    },
+    {
+      "external_id": "LLMBar-neighbor-056",
+      "subset": "neighbor",
+      "source_row_zero_based": 56,
+      "instruction_sha256": "913168f185cc9fe9bb6c8e0a383ded234a19afbeddff67f52bd819fa348ca2c3"
+    },
+    {
+      "external_id": "LLMBar-gptinst-054",
+      "subset": "gptinst",
+      "source_row_zero_based": 54,
+      "instruction_sha256": "52ed9e0a30383b13bbc59d7fa5633d8984c55dc1fa6e82f4a8e04f00d1107673"
+    },
+    {
+      "external_id": "LLMBar-gptinst-065",
+      "subset": "gptinst",
+      "source_row_zero_based": 65,
+      "instruction_sha256": "97dfbee5aa1497e85cbe79eb1ba64bebbed22a1608c405cf5032b4c495de1593"
+    },
+    {
+      "external_id": "LLMBar-gptinst-017",
+      "subset": "gptinst",
+      "source_row_zero_based": 17,
+      "instruction_sha256": "b53451ac7e693021a00d2e7e74b3e9ef16c77e094565e857d6b904be426aba6e"
+    },
+    {
+      "external_id": "LLMBar-gptinst-028",
+      "subset": "gptinst",
+      "source_row_zero_based": 28,
+      "instruction_sha256": "2372bbbe51a8887c877b39c912a9a1463315968f0b97d748106f199c3c36e29e"
+    },
+    {
+      "external_id": "LLMBar-gptinst-083",
+      "subset": "gptinst",
+      "source_row_zero_based": 83,
+      "instruction_sha256": "e919563469f98d899350fb4fdcba07a3798766ae666ea8f35b94345926047090"
+    },
+    {
+      "external_id": "LLMBar-gptinst-010",
+      "subset": "gptinst",
+      "source_row_zero_based": 10,
+      "instruction_sha256": "b8802e53257e3c8058b56987f55279ad1efee4c87ee15671c58c1fe153ba308b"
+    },
+    {
+      "external_id": "LLMBar-gptinst-026",
+      "subset": "gptinst",
+      "source_row_zero_based": 26,
+      "instruction_sha256": "68d91b6620c0877609cb2794dc88a7d3aef5153b1c07ee991377a971eeff4e94"
+    },
+    {
+      "external_id": "LLMBar-gptinst-087",
+      "subset": "gptinst",
+      "source_row_zero_based": 87,
+      "instruction_sha256": "722c28868b52b6f4fa6874cfeb219168362d304aa822760d9dcf0ef9b1363e87"
+    },
+    {
+      "external_id": "LLMBar-gptinst-076",
+      "subset": "gptinst",
+      "source_row_zero_based": 76,
+      "instruction_sha256": "7e0f9ce9e3054ff3e4e087a20e8a2a2e559b534678d3c1207f6da05a30ebcd81"
+    },
+    {
+      "external_id": "LLMBar-gptout-041",
+      "subset": "gptout",
+      "source_row_zero_based": 41,
+      "instruction_sha256": "498416ff8e65af49e4385e938b4f7c5b6c6261a88b494ecdcd045c35977791f1"
+    },
+    {
+      "external_id": "LLMBar-gptout-043",
+      "subset": "gptout",
+      "source_row_zero_based": 43,
+      "instruction_sha256": "95765ca270177f7e07f11b0cc9871412e5a5d4cc6896293c2bb22513e8302c32"
+    },
+    {
+      "external_id": "LLMBar-gptout-007",
+      "subset": "gptout",
+      "source_row_zero_based": 7,
+      "instruction_sha256": "b23a5903054fb336d06c0598fa006b8c7030edf6055d3a8cfaf67021a7d34e62"
+    },
+    {
+      "external_id": "LLMBar-gptout-045",
+      "subset": "gptout",
+      "source_row_zero_based": 45,
+      "instruction_sha256": "9a79302b8df3a2b661c2c6dcbdb27388782707b7b9acdd645a1ff6030be9da16"
+    },
+    {
+      "external_id": "LLMBar-gptout-018",
+      "subset": "gptout",
+      "source_row_zero_based": 18,
+      "instruction_sha256": "7c87b198ae8d4fb9cc1b10a3df920481083b11200dc25974e9aa24abe62064e3"
+    },
+    {
+      "external_id": "LLMBar-gptout-001",
+      "subset": "gptout",
+      "source_row_zero_based": 1,
+      "instruction_sha256": "4c750b11515fd054df236a81ce8cc1fb184425e69a2b354d2ac2e0aeaad68084"
+    },
+    {
+      "external_id": "LLMBar-gptout-025",
+      "subset": "gptout",
+      "source_row_zero_based": 25,
+      "instruction_sha256": "f6d29532b3e4e03296af5229c6f88544c8c8cfe64ee939c4d6e51a37aaba211d"
+    },
+    {
+      "external_id": "LLMBar-gptout-014",
+      "subset": "gptout",
+      "source_row_zero_based": 14,
+      "instruction_sha256": "b1c71391df5a85f245b5701131dd3ce0d2e2dc654cef1c46cf34b1c9c9229d12"
+    },
+    {
+      "external_id": "LLMBar-gptout-032",
+      "subset": "gptout",
+      "source_row_zero_based": 32,
+      "instruction_sha256": "80e20e1c488875c64dbe5b43b9015c9bc21b832bf30e25390957cf02606ffdca"
+    },
+    {
+      "external_id": "LLMBar-manual-011",
+      "subset": "manual",
+      "source_row_zero_based": 11,
+      "instruction_sha256": "08871d313f7d01d3c8a3ac4de9432552cb6ea642ef6fbdce9414401558be280b"
+    },
+    {
+      "external_id": "LLMBar-manual-012",
+      "subset": "manual",
+      "source_row_zero_based": 12,
+      "instruction_sha256": "c62fcb156ffe7e3dc5e39dcd92a02c53302397d401f82793218c25af421732cc"
+    },
+    {
+      "external_id": "LLMBar-manual-038",
+      "subset": "manual",
+      "source_row_zero_based": 38,
+      "instruction_sha256": "7d838ccfb0d4c0e8842dd8a475bc16b62200b3e0331cafe054877e5eeee793b4"
+    },
+    {
+      "external_id": "LLMBar-manual-022",
+      "subset": "manual",
+      "source_row_zero_based": 22,
+      "instruction_sha256": "6e65d8e83561e6681aa258689d0ea7e1dd8c68db144b870fb5931dfe2dd92aeb"
+    },
+    {
+      "external_id": "LLMBar-manual-013",
+      "subset": "manual",
+      "source_row_zero_based": 13,
+      "instruction_sha256": "96a0d14778240aa45950c41f6aa136623c0612439a1d3cca3864c7971579ea42"
+    },
+    {
+      "external_id": "LLMBar-manual-026",
+      "subset": "manual",
+      "source_row_zero_based": 26,
+      "instruction_sha256": "07cd18a9605f23638f0c84b0267814bfa87bc4bd114c77ad508288ed3e5ac8df"
+    },
+    {
+      "external_id": "LLMBar-manual-015",
+      "subset": "manual",
+      "source_row_zero_based": 15,
+      "instruction_sha256": "446e0c2d696c12c8dba339f2f31073f7bedd22af5c1d4561d10200cc31a43767"
+    },
+    {
+      "external_id": "LLMBar-manual-023",
+      "subset": "manual",
+      "source_row_zero_based": 23,
+      "instruction_sha256": "2f6f6cc704953cc8923ed86ed558507f096334c93aafc8dee642919b06b61060"
+    }
+  ]
+}

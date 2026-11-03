@@ -1,0 +1,61 @@
+{
+  "version": "FairEval v3.3",
+  "formal_calls": 22800,
+  "questions_per_model": 150,
+  "calls_per_question": 76,
+  "strict_accuracy_table": {
+    "columns": [
+      "评审器",
+      "检验数据",
+      "Vanilla",
+      "MEC3＋BPC3",
+      "B 双布局",
+      "D 八布局"
+    ],
+    "rows": [
+      [
+        "72B",
+        "FairEval 60",
+        "56.59",
+        "63.33",
+        "60.00",
+        "57.22"
+      ],
+      [
+        "72B",
+        "LLMBar 70",
+        "77.85",
+        "77.62",
+        "75.71",
+        "76.19"
+      ],
+      [
+        "32B",
+        "FairEval 60",
+        "59.98",
+        "51.67",
+        "48.33",
+        "48.89"
+      ],
+      [
+        "32B",
+        "LLMBar 70",
+        "81.59",
+        "74.76",
+        "69.52",
+        "67.62"
+      ]
+    ]
+  },
+  "paper_target_pages": [
+    9442,
+    9445
+  ],
+  "record_date": "2026-10-26",
+  "course_requirements_sha256": "109c2bb576afdddfe1536220bcab1bae35a86d249d27bd0139936ec9e9b9fb38",
+  "case_ids": [
+    "FairEval-056",
+    "FairEval-067"
+  ],
+  "no_new_model_calls": true
+}

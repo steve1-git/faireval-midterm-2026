@@ -1,0 +1,197 @@
+{
+  "completed_at": 1792936276.059559,
+  "passed_checks": 44,
+  "checks": [
+    "all_eight_factor_combinations",
+    "identity_mapping_P+1_L+1_S+1",
+    "identity_mapping_P+1_L+1_S-1",
+    "identity_mapping_P+1_L-1_S+1",
+    "identity_mapping_P+1_L-1_S-1",
+    "identity_mapping_P-1_L+1_S+1",
+    "identity_mapping_P-1_L+1_S-1",
+    "identity_mapping_P-1_L-1_S+1",
+    "identity_mapping_P-1_L-1_S-1",
+    "standard_BPC_binds_P_L_S",
+    "C_uses_S_equals_L",
+    "frozen20_60_70_split",
+    "frozen_configs_and_data_hashes_unchanged",
+    "Qwen2.5-72B-Instruct_sqlite_integrity",
+    "Qwen2.5-72B-Instruct_11400_unique_planned",
+    "Qwen2.5-72B-Instruct_actual_template_tokens_and_non_thinking",
+    "Qwen2.5-72B-Instruct_all_tasks_match_frozen_manifest_seeds_and_sampling",
+    "Qwen2.5-72B-Instruct_all_raw_outputs_reparse_identically_with_valid_identity_scores",
+    "Qwen2.5-72B-Instruct_76_calls_each_question_24_each_sampling_block",
+    "Qwen2.5-72B-Instruct_no_execution_or_parser_errors",
+    "Qwen2.5-72B-Instruct_22800_export_matches_database_half",
+    "Qwen2.5-72B-Instruct_calibration_replay_identical_and_not_formal",
+    "Qwen2.5-72B-Instruct_BF16_and_frozen_GPU_count",
+    "Qwen3-32B_sqlite_integrity",
+    "Qwen3-32B_11400_unique_planned",
+    "Qwen3-32B_actual_template_tokens_and_non_thinking",
+    "Qwen3-32B_all_tasks_match_frozen_manifest_seeds_and_sampling",
+    "Qwen3-32B_all_raw_outputs_reparse_identically_with_valid_identity_scores",
+    "Qwen3-32B_76_calls_each_question_24_each_sampling_block",
+    "Qwen3-32B_no_execution_or_parser_errors",
+    "Qwen3-32B_22800_export_matches_database_half",
+    "Qwen3-32B_calibration_replay_identical_and_not_formal",
+    "Qwen3-32B_BF16_and_frozen_GPU_count",
+    "all22800_completed",
+    "Qwen2.5-72B-Instruct_all_saved_decisions_and_strict_or_skip_aggregation_independently_recomputed",
+    "Qwen2.5-72B-Instruct_all_dataset_metrics_ratios_and_primary_external_paired5000_CIs",
+    "Qwen2.5-72B-Instruct_original_primary_scores_CIs_unchanged_by_reporting_fix",
+    "Qwen2.5-72B-Instruct_formal_outputs_unchanged_after_final_analysis",
+    "Qwen3-32B_all_saved_decisions_and_strict_or_skip_aggregation_independently_recomputed",
+    "Qwen3-32B_all_dataset_metrics_ratios_and_primary_external_paired5000_CIs",
+    "Qwen3-32B_original_primary_scores_CIs_unchanged_by_reporting_fix",
+    "Qwen3-32B_formal_outputs_unchanged_after_final_analysis",
+    "24_fixed_cases_with_exact_raw_evidence",
+    "six_figures_SVG_PDF_PNG"
+  ],
+  "models": {
+    "Qwen2.5-72B-Instruct": {
+      "counts": {
+        "completed_valid": 11216,
+        "completed_invalid": 184
+      },
+      "invalid_reasons": {
+        "missing_duplicate_or_unknown_label_in_final_score_block": 184
+      },
+      "by_data_subset": {
+        "LLMBar/gptout": {
+          "completed_valid": 660,
+          "completed_invalid": 24
+        },
+        "LLMBar/neighbor": {
+          "completed_valid": 661,
+          "completed_invalid": 23
+        },
+        "LLMBar/natural": {
+          "completed_valid": 2611,
+          "completed_invalid": 49
+        },
+        "FairEval/calibration": {
+          "completed_valid": 1492,
+          "completed_invalid": 28
+        },
+        "FairEval/test": {
+          "completed_valid": 4513,
+          "completed_invalid": 47
+        },
+        "LLMBar/manual": {
+          "completed_valid": 601,
+          "completed_invalid": 7
+        },
+        "LLMBar/gptinst": {
+          "completed_valid": 678,
+          "completed_invalid": 6
+        }
+      },
+      "formal_output_sha256": "85e99e832ee923d02d0a212a0152cc4bc8f2865639c9d362fc6365055bbc672d",
+      "execution_events": {
+        "execution_started": 11400
+      },
+      "runtime": {
+        "model": "Qwen/Qwen2.5-72B-Instruct",
+        "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+        "vllm": "0.8.5.post1",
+        "torch": "2.6.0+cu124",
+        "transformers": "4.51.3",
+        "cuda": "12.4",
+        "tensor_parallel_size": 4,
+        "dtype": "bfloat16",
+        "max_model_len": 4096,
+        "max_input_tokens": 1494,
+        "max_num_seqs": 4,
+        "gpu_memory_utilization": 0.9,
+        "enforce_eager": true,
+        "disable_custom_all_reduce": true,
+        "engine_top_k": -1,
+        "logical_top_k": 0,
+        "engine": "vLLM V0 offline",
+        "seed": 20261023,
+        "prefix_caching": false,
+        "worker_code_sha256": "c79486e2fcd1cd331af8e88121e815bbe3fd7844da482adca841856c604c37bb",
+        "model_load_seconds": 53.476227045059204
+      }
+    },
+    "Qwen3-32B": {
+      "counts": {
+        "completed_valid": 11100,
+        "completed_invalid": 300
+      },
+      "invalid_reasons": {
+        "missing_duplicate_or_unknown_label_in_final_score_block": 108,
+        "not_a_number": 187,
+        "score_outside_1_to_10": 5
+      },
+      "by_data_subset": {
+        "LLMBar/gptout": {
+          "completed_valid": 642,
+          "completed_invalid": 42
+        },
+        "LLMBar/neighbor": {
+          "completed_valid": 641,
+          "completed_invalid": 43
+        },
+        "LLMBar/natural": {
+          "completed_valid": 2578,
+          "completed_invalid": 82
+        },
+        "FairEval/calibration": {
+          "completed_valid": 1490,
+          "completed_invalid": 30
+        },
+        "FairEval/test": {
+          "completed_valid": 4496,
+          "completed_invalid": 64
+        },
+        "LLMBar/manual": {
+          "completed_valid": 593,
+          "completed_invalid": 15
+        },
+        "LLMBar/gptinst": {
+          "completed_valid": 660,
+          "completed_invalid": 24
+        }
+      },
+      "formal_output_sha256": "26318ee228f0609d7248aad507f13d18f6e2b6e963d6b9d5216be9d5aa9e829a",
+      "execution_events": {
+        "execution_started": 11400
+      },
+      "runtime": {
+        "model": "Qwen/Qwen3-32B",
+        "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+        "vllm": "0.8.5.post1",
+        "torch": "2.6.0+cu124",
+        "transformers": "4.51.3",
+        "cuda": "12.4",
+        "tensor_parallel_size": 2,
+        "dtype": "bfloat16",
+        "max_model_len": 4096,
+        "max_input_tokens": 1498,
+        "max_num_seqs": 4,
+        "gpu_memory_utilization": 0.9,
+        "enforce_eager": true,
+        "disable_custom_all_reduce": true,
+        "engine_top_k": -1,
+        "logical_top_k": 0,
+        "engine": "vLLM V0 offline",
+        "seed": 20261023,
+        "prefix_caching": false,
+        "worker_code_sha256": "c79486e2fcd1cd331af8e88121e815bbe3fd7844da482adca841856c604c37bb",
+        "model_load_seconds": 42.24664330482483
+      }
+    }
+  },
+  "formal_unique_tasks": 22800,
+  "additional_judge_calls": 0,
+  "reporting_repairs": [
+    "A/C same-parser skip diagnostics completed alongside B/D",
+    "complete eight-cell block and complete24-question coverage separated; invalid cells by block/layout/reason",
+    "marginal F and R confidence intervals added to existing F-R intervals",
+    "joint-valid B/D rates exposed",
+    "question-level coefficient distribution and Natural/Adversarial figures added"
+  ],
+  "generation_evidence_unchanged": true,
+  "main_results_unchanged": true
+}

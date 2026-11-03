@@ -1,0 +1,419 @@
+{
+  "version": "v3.1",
+  "indexing": "draw and block are one-based; identical references reuse the same output",
+  "pool_draws_per_layout_per_block": {
+    "P+1_L+1_S+1": 8,
+    "P+1_L+1_S-1": 1,
+    "P+1_L-1_S+1": 1,
+    "P+1_L-1_S-1": 2,
+    "P-1_L+1_S+1": 2,
+    "P-1_L+1_S-1": 1,
+    "P-1_L-1_S+1": 1,
+    "P-1_L-1_S-1": 8
+  },
+  "extension": {
+    "A_canonical": [
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 2
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 3
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 4
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 5
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 6
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 7
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 8
+      }
+    ],
+    "A_reverse": [
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 2
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 3
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 4
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 5
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 6
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 7
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 8
+      }
+    ],
+    "B": [
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 2
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 3
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 4
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 2
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 3
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 4
+      }
+    ],
+    "C": [
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 2
+      },
+      {
+        "layout": "P+1_L-1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L-1_S-1",
+        "draw": 2
+      },
+      {
+        "layout": "P-1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L+1_S+1",
+        "draw": 2
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 2
+      }
+    ],
+    "D": [
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L+1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L-1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L-1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L+1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L-1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 1
+      }
+    ]
+  },
+  "original_style_sampling": {
+    "MEC3_canonical": [
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 2
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 3
+      }
+    ],
+    "MEC3_reverse": [
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 2
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 3
+      }
+    ],
+    "MEC6_canonical": [
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 2
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 3
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 4
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 5
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 6
+      }
+    ],
+    "MEC6_reverse": [
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 2
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 3
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 4
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 5
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 6
+      }
+    ],
+    "MEC3_BPC3": [
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 1
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 2
+      },
+      {
+        "layout": "P+1_L+1_S+1",
+        "draw": 3
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 1
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 2
+      },
+      {
+        "layout": "P-1_L-1_S-1",
+        "draw": 3
+      }
+    ]
+  },
+  "mechanism": [
+    {
+      "layout": "P+1_L+1_S+1",
+      "draw": 1
+    },
+    {
+      "layout": "P+1_L+1_S-1",
+      "draw": 1
+    },
+    {
+      "layout": "P+1_L-1_S+1",
+      "draw": 1
+    },
+    {
+      "layout": "P+1_L-1_S-1",
+      "draw": 1
+    },
+    {
+      "layout": "P-1_L+1_S+1",
+      "draw": 1
+    },
+    {
+      "layout": "P-1_L+1_S-1",
+      "draw": 1
+    },
+    {
+      "layout": "P-1_L-1_S+1",
+      "draw": 1
+    },
+    {
+      "layout": "P-1_L-1_S-1",
+      "draw": 1
+    }
+  ],
+  "mechanism_rule": "use draw1 from each of eight layouts in each block, with equal cell weights",
+  "repeat_stability_rule": "use the three draw1 observations per layout, one in each block",
+  "A_orientation_rule": "For each frozen initial-order assignment choose A_canonical OR A_reverse, then make an eight-call decision. Average correctness over assignments, never pool the two orientations into a sixteen-call score average.",
+  "original_non_BPC_orientation_rule": "Vanilla/EC use their two greedy orientation outputs; MEC3/MEC6 use the corresponding per-block orientation subset. Select one orientation per question for each of 100 frozen assignments and average metrics. These assignments are postprocessing, not additional generations or independent questions.",
+  "seed": {
+    "function": "sampling_seed in 协议实现.py",
+    "key": "faireval-v3.1|model_revision|question_id|block|layout_id|draw",
+    "value": "big-endian first8bytes SHA256(key), modulo 2**63"
+  },
+  "original_EC_prompt_compatibility": "canonical and standard reverse FairEval prompts must byte-match author gen_prompt; checked without importing or executing author network code",
+  "frozen_shuffled_layout_draw_order_per_block": {
+    "1": [
+      "P+1_L+1_S+1#draw2",
+      "P-1_L-1_S-1#draw8",
+      "P+1_L-1_S-1#draw2",
+      "P-1_L-1_S-1#draw3",
+      "P-1_L-1_S-1#draw2",
+      "P+1_L+1_S+1#draw6",
+      "P+1_L+1_S-1#draw1",
+      "P-1_L-1_S-1#draw5",
+      "P+1_L+1_S+1#draw4",
+      "P+1_L+1_S+1#draw5",
+      "P-1_L+1_S-1#draw1",
+      "P-1_L-1_S-1#draw1",
+      "P+1_L+1_S+1#draw1",
+      "P+1_L+1_S+1#draw7",
+      "P-1_L-1_S-1#draw6",
+      "P-1_L-1_S-1#draw7",
+      "P+1_L+1_S+1#draw3",
+      "P+1_L-1_S-1#draw1",
+      "P-1_L+1_S+1#draw1",
+      "P+1_L+1_S+1#draw8",
+      "P-1_L-1_S+1#draw1",
+      "P+1_L-1_S+1#draw1",
+      "P-1_L-1_S-1#draw4",
+      "P-1_L+1_S+1#draw2"
+    ],
+    "2": [
+      "P-1_L+1_S-1#draw1",
+      "P-1_L+1_S+1#draw1",
+      "P+1_L+1_S+1#draw6",
+      "P-1_L-1_S-1#draw5",
+      "P-1_L-1_S-1#draw1",
+      "P+1_L+1_S+1#draw4",
+      "P-1_L-1_S+1#draw1",
+      "P+1_L+1_S+1#draw5",
+      "P+1_L+1_S+1#draw7",
+      "P-1_L-1_S-1#draw6",
+      "P+1_L+1_S+1#draw1",
+      "P+1_L+1_S+1#draw8",
+      "P-1_L+1_S+1#draw2",
+      "P+1_L+1_S+1#draw3",
+      "P-1_L-1_S-1#draw7",
+      "P+1_L+1_S-1#draw1",
+      "P+1_L-1_S-1#draw2",
+      "P+1_L+1_S+1#draw2",
+      "P-1_L-1_S-1#draw2",
+      "P-1_L-1_S-1#draw4",
+      "P+1_L-1_S+1#draw1",
+      "P-1_L-1_S-1#draw8",
+      "P+1_L-1_S-1#draw1",
+      "P-1_L-1_S-1#draw3"
+    ],
+    "3": [
+      "P-1_L-1_S-1#draw3",
+      "P+1_L+1_S+1#draw3",
+      "P+1_L-1_S+1#draw1",
+      "P+1_L+1_S+1#draw1",
+      "P-1_L-1_S-1#draw5",
+      "P-1_L-1_S-1#draw4",
+      "P+1_L+1_S-1#draw1",
+      "P-1_L+1_S+1#draw2",
+      "P+1_L-1_S-1#draw1",
+      "P+1_L+1_S+1#draw5",
+      "P-1_L+1_S-1#draw1",
+      "P-1_L-1_S+1#draw1",
+      "P-1_L-1_S-1#draw8",
+      "P-1_L+1_S+1#draw1",
+      "P-1_L-1_S-1#draw7",
+      "P-1_L-1_S-1#draw6",
+      "P+1_L-1_S-1#draw2",
+      "P+1_L+1_S+1#draw7",
+      "P+1_L+1_S+1#draw4",
+      "P-1_L-1_S-1#draw2",
+      "P+1_L+1_S+1#draw6",
+      "P-1_L-1_S-1#draw1",
+      "P+1_L+1_S+1#draw2",
+      "P+1_L+1_S+1#draw8"
+    ]
+  },
+  "question_order": "For each model/block shuffle all question_ids using random.Random(f\"v31-question-order|{block}\"); no label-dependent ordering."
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-012",
+    "block": 1,
+    "semantic_review": "Y补充线路覆盖、时刻安排、实时信息、费用和安全；X更强调感官可及性与通用设计。人工参照偏好Y，B的平均X−Y分差为+0.0625，D为−0.125。两组均有效，这是一例很小分差跨过零点后纠正参照错误的情况，不能凭这一例认定某个因素造成改善。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-063",
+    "block": 1,
+    "semantic_review": "两份答案给出的邮箱正则表达式实际相同，主要差异在函数封装和解释。Y的文字解释与其正则并不完全对应，人工标签仍固定为Y。B恰为平局，D仅以−0.0625偏向Y；匹配人工偏好不能直接解读为提高了代码或解释的正确性。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-067",
+    "block": 1,
+    "semantic_review": "两份代码都维护结果列表，题目“无额外数据结构”的含义涉及是否排除输出空间；X给出正确缩进、去重和示例，Y的格式及重复处理较弱。B有一次评分后又继续解释，违反冻结的末尾评分块规则，因此整题块无效；D的八次输出均有效且偏向X。这里的严格指标纠正首先包含协议有效性的变化，不能全部归为语义能力提升。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-032",
+    "block": 1,
+    "semantic_review": "两份答案对“假装理解”的线索列举有重叠；Y把提出基础问题列为可疑线索，X把不提问列为线索，说明这些描述受情境影响。B以+0.625匹配人工X，D以−0.125转向Y。该例是八布局引入的新参照错误，不能只展示D纠正的案例。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-036",
+    "block": 1,
+    "semantic_review": "两份答案都提到客观性、证据或交叉核对，也都涉及作者或出版者声誉；题目要求“不仅依赖声誉”，并不是完全禁止考察声誉。人工偏好X，B分差+0.125，D为−0.1875。优势很小且改变呈现组合后反转，不能用单题支持稳定优劣。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-056",
+    "block": 1,
+    "semantic_review": "两份答案都讨论破译失败可能延长战争及其不确定性，人工标签为真实平局。B的四个正向分差均为+1、四个反向均为−1，恰好抵消为平局；D平均分差+0.4375而误判X。该例具体显示双布局的抵消与八布局的平均不保证同一判决，也不能把抵消本身等同于不存在位置或标签影响。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-002",
+    "block": 1,
+    "semantic_review": "两份答案在运动、放松、睡眠、饮食、社交、时间管理和寻求帮助方面高度重叠，人工标签为平局。B和D分差均为−0.9375而偏向Y，相关调用都有效。这是持续的内容偏好与平局识别问题，扩展呈现布局没有使判决回到人工参照。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-003",
+    "block": 1,
+    "semantic_review": "两份答案比较语法、应用和类型等方面，Y还出现“JavaScript has no built-in error handling system”这一需具体核验的技术表述。固定人工参照为Y，B与D分别以+0.3125和+0.375偏向X。这里只记录对既有人类标签的不一致，不据本例修改标签，也不把未匹配标签自动称为每个技术维度都判断错误。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-006",
+    "block": 1,
+    "semantic_review": "X围绕营养构成、吸收和环境展开；Y增加伦理及成本，但用整体“营养价值更低”的概括描述植物蛋白，措辞更绝对。人工偏好X，而B、D所有选用评分都偏向Y，平均分差约−1。该例是稳定的参照不一致，布局反平衡没有消除；本记录不把原答案中的健康断言当作经过验证的建议。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-004",
+    "block": 1,
+    "semantic_review": "两份答案均提供专用工作区、固定时间和减少干扰等建议；Y增加团队联系与线上会议等具体做法。人工偏好Y，B、D平均分差同为−1.125且全部评分有效，是双方正确的对照案例，不构成D优于B的证据。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-005",
+    "block": 1,
+    "semantic_review": "X覆盖量子位、量子门和因数分解，Y还列举纠缠及不同计算路线，两者都是较概括的解释。人工偏好Y，B和D分别为−0.875和−0.9375，均匹配参照。该例记录稳定一致性，不把匹配偏好当成逐条物理表述已经核实。",
+    "source_case_selection_unchanged": true
+  },
+  {
+    "model": "Qwen2.5-72B-Instruct",
+    "question_id": "FairEval-008",
+    "block": 1,
+    "semantic_review": "两份答案均涉及资源、师资、技术、参与和评估；Y还涉及课程、标准、公平及可持续性。人工偏好Y，B与D均以约−1的分差匹配参照。Y更长且覆盖点更多，这两个特征并存，不能据本例把长度认定为偏差原因。",
+    "source_case_selection_unchanged": true
+  }
+]

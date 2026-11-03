@@ -1,0 +1,23 @@
+{
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+  "vllm": "0.8.5.post1",
+  "torch": "2.6.0+cu124",
+  "transformers": "4.51.3",
+  "cuda": "12.4",
+  "tensor_parallel_size": 4,
+  "dtype": "bfloat16",
+  "max_model_len": 4096,
+  "max_input_tokens": 1494,
+  "max_num_seqs": 4,
+  "gpu_memory_utilization": 0.9,
+  "enforce_eager": true,
+  "disable_custom_all_reduce": true,
+  "engine_top_k": -1,
+  "logical_top_k": 0,
+  "engine": "vLLM V0 offline",
+  "seed": 20261023,
+  "prefix_caching": false,
+  "worker_code_sha256": "c79486e2fcd1cd331af8e88121e815bbe3fd7844da482adca841856c604c37bb",
+  "model_load_seconds": 53.476227045059204
+}

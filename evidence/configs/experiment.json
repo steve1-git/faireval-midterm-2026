@@ -1,0 +1,602 @@
+{
+  "status": "third_review_complete_new_runner_not_integrated",
+  "version": "v3.3",
+  "supersedes": [
+    "3B plus14B plan",
+    "Selective BPC budget-focused plan"
+  ],
+  "date": "2026-10-23",
+  "title": "大语言模型评审的顺序偏差与判断可靠性 FairEval复现及扩展",
+  "research_question": "识别位置、标签与指定评分输出顺序的效应及交互，并检验解除因素绑定后是否改善判断正确性",
+  "exclude_3B_from_primary_results": true,
+  "reuse_3B_generations_for_primary": false,
+  "models": [
+    {
+      "model": "Qwen/Qwen2.5-72B-Instruct",
+      "revision": "495f39366efef23836d0cfae4fbe635880d2be31",
+      "gated": false,
+      "weight_GB": 145.412519312,
+      "role": "primary judge; BF16; four-GPU sharding"
+    },
+    {
+      "model": "Qwen/Qwen3-32B",
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "gated": false,
+      "weight_GB": 65.52432856,
+      "role": "second-generation judge validation; non-thinking mode; BF16"
+    }
+  ],
+  "data": {
+    "FairEval": {
+      "n": 80,
+      "calibration_ids": [
+        1,
+        7,
+        11,
+        15,
+        16,
+        22,
+        23,
+        31,
+        34,
+        38,
+        45,
+        53,
+        57,
+        64,
+        66,
+        68,
+        70,
+        74,
+        75,
+        76
+      ],
+      "evaluation_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        17,
+        18,
+        19,
+        20,
+        21,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        33,
+        35,
+        36,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        54,
+        55,
+        56,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        65,
+        67,
+        69,
+        71,
+        72,
+        73,
+        77,
+        78,
+        79,
+        80
+      ],
+      "report_separately": true,
+      "split_origin": "本组按课程要求固定20/60；不是作者原始划分",
+      "previous_exposure": "原80题均已有3B探索输出；20题含先前试跑/协议校准；60题是新增模型的预设主评价集，不称全流程未见的盲测",
+      "all80_role": "预设描述性补充结果，单列20题与60题；不替代固定60题主要比较"
+    },
+    "LLMBar": {
+      "n": 70,
+      "purpose": "external locked validation",
+      "quota": {
+        "natural": 35,
+        "neighbor": 9,
+        "gptinst": 9,
+        "gptout": 9,
+        "manual": 8
+      },
+      "human_curated_binary_labels": true,
+      "use_for_tuning": false,
+      "report_separately_from_FairEval": true,
+      "estimand": "locked balanced70 subset, not full419 benchmark performance",
+      "strata": {
+        "natural": 35,
+        "adversarial_total": 35,
+        "neighbor": 9,
+        "gptinst": 9,
+        "gptout": 9,
+        "manual": 8
+      },
+      "subgroup_scope": "Natural/Adversarial report separately; adversarial subtypes are descriptive diagnostics without separate strong significance claims",
+      "contamination_claim": "external task validation; no claim that public benchmark was absent from pretraining",
+      "error_diagnostics": [
+        "candidate-answer length difference",
+        "source adversarial construction type",
+        "instruction-following failure illustrated with original text"
+      ]
+    }
+  },
+  "factors": {
+    "P": "X appears first or second",
+    "L": "X has Assistant1 or Assistant2 label",
+    "S": "assigned instruction to output the X score first or second; actual order recorded separately"
+  },
+  "layouts": [
+    {
+      "layout": "P+1_L+1_S+1",
+      "P": 1,
+      "L": 1,
+      "S": 1,
+      "display_content_order": [
+        "X",
+        "Y"
+      ],
+      "labels": {
+        "X": 1,
+        "Y": 2
+      },
+      "score_output_content_order": [
+        "X",
+        "Y"
+      ],
+      "score_output_label_order": [
+        1,
+        2
+      ]
+    },
+    {
+      "layout": "P+1_L+1_S-1",
+      "P": 1,
+      "L": 1,
+      "S": -1,
+      "display_content_order": [
+        "X",
+        "Y"
+      ],
+      "labels": {
+        "X": 1,
+        "Y": 2
+      },
+      "score_output_content_order": [
+        "Y",
+        "X"
+      ],
+      "score_output_label_order": [
+        2,
+        1
+      ]
+    },
+    {
+      "layout": "P+1_L-1_S+1",
+      "P": 1,
+      "L": -1,
+      "S": 1,
+      "display_content_order": [
+        "X",
+        "Y"
+      ],
+      "labels": {
+        "X": 2,
+        "Y": 1
+      },
+      "score_output_content_order": [
+        "X",
+        "Y"
+      ],
+      "score_output_label_order": [
+        2,
+        1
+      ]
+    },
+    {
+      "layout": "P+1_L-1_S-1",
+      "P": 1,
+      "L": -1,
+      "S": -1,
+      "display_content_order": [
+        "X",
+        "Y"
+      ],
+      "labels": {
+        "X": 2,
+        "Y": 1
+      },
+      "score_output_content_order": [
+        "Y",
+        "X"
+      ],
+      "score_output_label_order": [
+        1,
+        2
+      ]
+    },
+    {
+      "layout": "P-1_L+1_S+1",
+      "P": -1,
+      "L": 1,
+      "S": 1,
+      "display_content_order": [
+        "Y",
+        "X"
+      ],
+      "labels": {
+        "X": 1,
+        "Y": 2
+      },
+      "score_output_content_order": [
+        "X",
+        "Y"
+      ],
+      "score_output_label_order": [
+        1,
+        2
+      ]
+    },
+    {
+      "layout": "P-1_L+1_S-1",
+      "P": -1,
+      "L": 1,
+      "S": -1,
+      "display_content_order": [
+        "Y",
+        "X"
+      ],
+      "labels": {
+        "X": 1,
+        "Y": 2
+      },
+      "score_output_content_order": [
+        "Y",
+        "X"
+      ],
+      "score_output_label_order": [
+        2,
+        1
+      ]
+    },
+    {
+      "layout": "P-1_L-1_S+1",
+      "P": -1,
+      "L": -1,
+      "S": 1,
+      "display_content_order": [
+        "Y",
+        "X"
+      ],
+      "labels": {
+        "X": 2,
+        "Y": 1
+      },
+      "score_output_content_order": [
+        "X",
+        "Y"
+      ],
+      "score_output_label_order": [
+        2,
+        1
+      ]
+    },
+    {
+      "layout": "P-1_L-1_S-1",
+      "P": -1,
+      "L": -1,
+      "S": -1,
+      "display_content_order": [
+        "Y",
+        "X"
+      ],
+      "labels": {
+        "X": 2,
+        "Y": 1
+      },
+      "score_output_content_order": [
+        "Y",
+        "X"
+      ],
+      "score_output_label_order": [
+        1,
+        2
+      ]
+    }
+  ],
+  "standard_BPC_layouts": [
+    "P+1_L+1_S+1",
+    "P-1_L-1_S-1"
+  ],
+  "four_layout_ablation": "all P,L combinations, S=L; output numerical label1 score first",
+  "extension_name": "multi-factor counterbalancing calibration (working name, no claim of first proposal)",
+  "primary_comparisons": [
+    "D minus B; Qwen2.5-72B-Instruct; FairEval fixed60; strict human-label agreement averaged over three eight-judgment blocks"
+  ],
+  "independent_seed_blocks": 3,
+  "judgments_per_method_per_question_per_block": 8,
+  "pool_per_question_per_block": {
+    "canonical_layout": 8,
+    "standard_swap_layout": 8,
+    "two_other_S_equals_L_layouts_each": 2,
+    "four_S_not_equals_L_layouts_each": 1
+  },
+  "unique_sampling_calls_per_question": 72,
+  "additional_greedy_FairEval_style_calls_per_question": 4,
+  "new_generation_count": 22800,
+  "aggregation": "Only after every required call has a completed/persisted output and resolved scoring: use equal selected-call weights, explicit label-to-content mapping and exact Decimal score sums. Any completed-invalid call makes the method unit invalid; pending execution/scoring is not an invalid model judgment.",
+  "generation": {
+    "model_revisions_pinned": true,
+    "temperature_sampling": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "primary_Qwen3_enable_thinking": false,
+    "max_new_tokens": 2048,
+    "inference_only_no_judge_training": true,
+    "decoding_estimand": "same frozen FairEval-style decoding protocol within each comparison; not a vendor-optimal performance claim",
+    "record": [
+      "raw text and token IDs",
+      "prompt/completion token counts",
+      "finish reason and truncation",
+      "assigned and observed final score order",
+      "explicit label-to-X/Y mapping",
+      "seed, block, layout and draw IDs"
+    ],
+    "deployment_checks_before_formal_run": [
+      "pinned model and tokenizer versions",
+      "actual Qwen3 chat template with enable_thinking=False",
+      "BF16 memory and full prompt/context capacity on the four L20s",
+      "calibration operational check and measured token/score/decision replay under frozen engine/hardware/schedule"
+    ],
+    "readiness": "new large-model deployment has not been performed; synthetic checks do not establish hardware readiness",
+    "engine_metadata": [
+      "actual engine and version,torch/CUDA and GPU configuration",
+      "parallelism, attention backend, batch/scheduling settings and reproducibility settings",
+      "rendered chat-template text and hash, including actual Qwen3 non-thinking suffix",
+      "effective decoding settings rather than package defaults alone"
+    ],
+    "top_k_semantics": "disable Top-k truncation; retain logical top_k=0; verify encoding against the actually installed engine version",
+    "replay_interpretation": "No assumed bitwise determinism. Replay the same calibration input and per-request seed under the same runtime/schedule; record token equality,score equality and decision equality separately. Freeze any deployment fixes using calibration data. Do not promise equality across versions or hardware.",
+    "vllm_reference_check": {
+      "sampling_params": "https://docs.vllm.ai/en/latest/api/vllm/sampling_params/",
+      "current_documented_disabled_top_k": "0 or -1",
+      "reproducibility": "https://docs.vllm.ai/en/latest/usage/reproducibility/",
+      "status": "documentation checked; no new judge engine deployed or actual GPU replay performed"
+    }
+  },
+  "analysis": {
+    "unit": "question, retaining all methods, layouts and seed blocks",
+    "primary_FairEval_metric": "strict human-label agreement, mean of three per-block eight-judgment decisions",
+    "external_metric": "accuracy against LLMBar instruction-following label; predicted TIE counted incorrect",
+    "secondary": [
+      "Kappa where appropriate",
+      "true vs false tie confusion",
+      "within-layout repeat stability",
+      "P/L/S paired contrasts and interactions",
+      "semantic error categories",
+      "paired bootstrap difference intervals"
+    ],
+    "primary_contrast": "D minus B, in percentage points; only this model/dataset/metric is primary",
+    "bootstrap_repetitions": 5000,
+    "bootstrap_seed": 20261023,
+    "multiplicity": "Holm correction for declared secondary inferential factor contrasts; report effect sizes and CIs",
+    "do_not_treat_averaging_invariance_as_proof_of_correctness": true,
+    "primary_model": "Qwen/Qwen2.5-72B-Instruct",
+    "primary_dataset": "FairEval evaluation_ids fixed60",
+    "validation_order": [
+      "72B FairEval60 primary",
+      "72B LLMBar70 external task validation",
+      "Qwen3-32B direction/size replication on both datasets"
+    ],
+    "bootstrap_unit": "question; retain all its methods, layouts, blocks, shared outputs and orientation assignments together",
+    "bootstrap_interval": "two-sided 95% percentile paired question bootstrap, 5000 replicates, seed20261023",
+    "mechanism_family": "seven coefficients P,L,S,PL,PS,LS,PLS on primary model/FairEval60; Holm across these seven",
+    "secondary_method_family": "D-C and D-A on primary model/FairEval60; Holm across these two",
+    "secondary_pvalues": "two-sided centered-null question bootstrap of paired mean differences/contrasts, 20000 draws, seed20261024; approximate inference for a mean-zero null, interpreted alongside effect CIs; not an exact randomization test and not a bootstrap sign fraction treated as a null p-value",
+    "validation_inference": "report prespecified differences and 95% CIs; no selection of strongest model, dataset or subgroup to replace primary result",
+    "token_accounting": "per-method selected completion tokens and truncation rates; output length is a possible treatment mediator, not an observed pretreatment confound to regress away in the primary comparison",
+    "external_bootstrap": "resample questions within the five frozen LLMBar source strata, preserving quotas35/9/9/9/8 and paired methods/blocks",
+    "precision": "60 independent questions; repeated calls/blocks do not increase question count. Show discordant correctness counts and uncertainty, without promising improvement.",
+    "conclusion_rules": [
+      "A mean signed factor coefficient near zero does not establish absence of question/context sensitivity.",
+      "A nonsignificant D-B difference does not establish equivalence; interpret the full CI and paired changes.",
+      "No equivalence or noninferiority claim without a separately prespecified meaningful margin and corresponding analysis.",
+      "Three blocks,100 direction assignments and many layout pairs never increase the independent question count."
+    ],
+    "additional_sensitivity_family": "descriptive only; no extra confirmatory p-values, no change to existing7-factor and2-method Holm families",
+    "strict_metric_interpretation": {
+      "estimand": "overall completed judging-protocol correct-output proportion, not isolated semantic judgment capacity",
+      "identity": "strict_accuracy = valid_rate * conditional_valid_accuracy when there is at least one valid decision, using the same question/block units and weights",
+      "pooled_formula": "V = n_valid/n_scheduled; C = n_correct_valid/n_valid; A = n_correct_valid/n_scheduled",
+      "three_blocks": "pool valid/correct counts over equal-weight scheduled question/block units; a valid-count-weighted mean of block conditional accuracies, not their unweighted mean",
+      "conditional_metrics": "method-specific valid subsets differ; their accuracy difference is not a pure capacity difference",
+      "pending_tasks": "no final strict accuracy until every required frozen task has a completed persisted output and resolved scoring; pending is not incorrect",
+      "no_valid_units": "strict_accuracy=0 on a completed run; conditional accuracy undefined, not invented as zero"
+    },
+    "joint_valid_diagnostic": {
+      "comparison": "B versus D on identical question/block units where both protocols are valid",
+      "formula": "sum_joint(correct_D-correct_B)/n_joint_units",
+      "report": [
+        "common valid question/block count",
+        "distinct question count",
+        "paired agreement rates and difference",
+        "eligible IDs/blocks"
+      ],
+      "scope": "conditional descriptive diagnostic; common-valid selection remains, so not a causal isolation of semantic judgment ability",
+      "uncertainty": "if an interval is reported, resample original questions with their complete block/method vectors and recompute the joint-valid ratio",
+      "new_generations": 0,
+      "new_confirmatory_tests": 0
+    }
+  },
+  "skills": [
+    {
+      "name": "experimental-design",
+      "version": "1.5",
+      "source": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/experimental-design"
+    },
+    {
+      "name": "statistical-analysis",
+      "version": "2.0",
+      "source": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/main/skills/statistical-analysis"
+    },
+    {
+      "name": "brainstorming-research-ideas",
+      "version": "1.0.0",
+      "source": "https://github.com/Orchestra-Research/AI-research-SKILLs/tree/main/21-research-ideation/brainstorming-research-ideas"
+    }
+  ],
+  "reproduction_type": "原文自动评审方法迁移复现及本组扩展",
+  "review_basis": "Independent algebra, original paper/source inspection and synthetic protocol checks; no new-model outputs used.",
+  "secondary_method_comparisons": [
+    "D minus C: release label/output-order coupling",
+    "D minus A: compare with randomized-initial-order eight-sample single-layout decisions"
+  ],
+  "count_change_reason": "19200 correctly covered the prior A-D pool. Add four reverse-orientation samples per block for full per-block reverse MEC6 and eight-sample single-layout orientation randomization; not an arithmetic correction.",
+  "sample_mapping_file": "采样映射.json",
+  "orientation_assignment_file": "初始方向分配.json",
+  "block_aggregation": "Decide within each eight-judgment block; average question-level correctness over three blocks. Do not merge them into one twenty-four-judgment decision.",
+  "invalid_policy": {
+    "assigned_layout_is_analysis_layout": true,
+    "wrong_S_but_valid_explicit_labels": "include in assigned-layout main analysis; flag order noncompliance separately",
+    "invalid_call": [
+      "missing, repeated or unknown label in the terminal score block",
+      "unreadable, nonfinite or out-of-range score",
+      "generation truncated at output limit"
+    ],
+    "terminal_score_block": "two unique explicit labels, each with a finite score in [1,10]; final score lines at end of response; same grammar for all eight extension layouts",
+    "never_drop_required_calls": true,
+    "method_invalid_if_any_required_call_invalid": true,
+    "strict_accuracy": "invalid method/question/block contributes zero correctness; denominator retains every scheduled question/block",
+    "valid_decision_rate": "valid method/question/block count divided by all scheduled question/blocks",
+    "conditional_valid_accuracy": "auxiliary; denominator is valid method/question/blocks, displayed explicitly",
+    "no_quality_based_resampling": true,
+    "original_Vanilla_parser": "separate original format: leading two Assistant1/2 scores before explanation; not the extension terminal-block parser",
+    "execution_failure": "not a completed model-invalid rating; restore the same frozen task and keep the run incomplete until completion"
+  },
+  "mechanism": {
+    "outcome": "score_X minus score_Y, by assigned P/L/S",
+    "sample": "draw1 from each layout in each of three blocks; equal layout weights",
+    "model_terms": [
+      "1",
+      "P",
+      "L",
+      "S",
+      "PL",
+      "PS",
+      "LS",
+      "PLS"
+    ],
+    "coefficient": "beta_T(q,b) = sum_over_8_layouts(product_of_signs_T * d_qb_layout)/8",
+    "effect_scaling": "binary high-minus-low main effect equals 2*beta_T; identify reported scale explicitly",
+    "D_expected_gap": "beta0",
+    "C_expected_gap": "beta0 + betaLS",
+    "B_expected_gap": "beta0 + betaPL + betaPS + betaLS",
+    "D_minus_C_expected_gap": "-betaLS; not the S main effect",
+    "D_minus_B_expected_gap": "-betaPL-betaPS-betaLS; not one isolated factor",
+    "finite_sampling": "identities describe cell expectation contrasts; finite-draw method differences also include sampling noise",
+    "interpretation": "P/L are assigned presentation changes; S is the total effect of the assigned score-order instruction, which may change explanation text as well as scores. Not a pure final-line permutation effect, not internal reasoning order, and not a causal effect of actually complied output order.",
+    "missing_cell_policy": "Use a common question set with all24 draw1 cells valid across three blocks for the reported directional/distribution/flip/repeat diagnostics. Publish eligible N and missing-cell counts by layout/block. No imputation or substitution, no claim that complete-case diagnostics describe failed questions. Primary strict accuracy continues to include every scheduled question/block.",
+    "correctness_is_separate_non_linear_outcome": true,
+    "sensitivity": {
+      "directional": "mean signed coefficient over questions; keep seven existing Holm tests",
+      "question_distribution": "preserve all three coefficients per question and their mean; plot signed distributions; absolute magnitudes descriptive only, noise-inflated",
+      "single_factor_flips": "For P/L/S, compare the four edges of the cube holding the other two factors fixed, separately in each block:12 pairs/question/factor.",
+      "repeat_noise": "For each of eight layouts, compare draw1 across all three block pairs:24 pairs/question. Use the same complete questions as factor-flip rates.",
+      "outcome_types": [
+        "any X/Y/TIE disagreement",
+        "opposite X-versus-Y winners",
+        "tie-to-decisive transitions"
+      ],
+      "excess_conflict": "per-question single-factor flip conflict rate minus same-layout repeat conflict rate, then average questions; retain negative finite estimates",
+      "excess_interpretation": "under stationary independent calls, population edge excess equals half the squared distance between its two categorical decision probability vectors; this is not an individual-question significance test",
+      "uncertainty": "paired question bootstrap,5000 draws,seed20261023; LLMBar within frozen source strata; keep shared outputs and blocks",
+      "inference_scope": "prespecified secondary descriptive diagnostics with marginal95% intervals, not extra confirmatory tests; no per-question significance screening or best subgroup selection",
+      "do_not_conclude_no_sensitivity_from_zero_mean": true,
+      "do_not_treat_raw_flips_or_absolute_effects_as_pure_bias": true
+    },
+    "S_manipulation_check": {
+      "primary_sample": "balanced draw1 core: eight layouts in each of three blocks; do not pool unequal extra layout repetitions into a factorial compliance estimate",
+      "report_by": [
+        "each assigned layout",
+        "assigned_S",
+        "model",
+        "dataset"
+      ],
+      "conditional_compliance": "matching actual order among uniquely readable in-range final score pairs; state denominator",
+      "joint_success": "fully valid, untruncated and order-compliant calls divided by all scheduled calls; show unreadable and truncated separately",
+      "no_complier_only_primary_analysis": true,
+      "low_compliance_interpretation": "estimate assigned-instruction effect only; do not claim the actually realized order was reliably changed",
+      "even_high_compliance": "still a total instruction effect; explanation-mediated paths remain part of the intervention"
+    }
+  },
+  "generation_protocol_version": "v3.1_unchanged",
+  "failure_sensitivity": {
+    "main": "unchanged strict complete protocol, identical for all A/B/C/D and original-method main comparisons",
+    "policy_only_diagnostic": "same explicit-label parser, validity and Decimal arithmetic; skip invalid calls and re-average survivors; not a full-layout protocol; record retained calls/layout coverage",
+    "literal_author_diagnostic": "original EC/MEC/BPC standard-layout outputs only; raw final-two-line positional float parser, -1 skipping and float means, checked against author functions; not Vanilla",
+    "nonfinite_or_all_failed": "record nonfinite or author-would-divide-by-zero; never coerce into a usable tie; keep scheduled-question denominators in comparable strict metric tables",
+    "report": [
+      "original method strict vs literal-author outcomes and eligible counts",
+      "B/D strict vs policy-only diagnostic agreement and D-B differences",
+      "coverage, retained calls, changed decisions and causes"
+    ],
+    "interpretation": "literal-author vs main difference includes parsing, validation, arithmetic and aggregation; only same-parser comparison isolates failure aggregation",
+    "always_compute_from_saved_text": true,
+    "new_model_calls": 0
+  },
+  "execution_contract": {
+    "required_terminal_task_states": [
+      "completed_invalid",
+      "completed_valid"
+    ],
+    "not_executed_to_completion": "pending_execution: no complete persisted model output; OOM, interrupted or failed requests remain unfinished",
+    "saved_output_not_scored": "pending_scoring: output is persisted; parser/aggregation implementation errors require reparsing the saved output, not a fresh model sample",
+    "normal_output_limit": "a normally finished length-limit response is completed execution; truncation is then scored invalid under the frozen protocol, not regenerated for a longer answer",
+    "completed_invalid": "normal completed/persisted output fails frozen score rules; retain and never quality-resample",
+    "completed_valid": "normal completed/persisted output passes frozen score rules; reuse",
+    "recovery": "repair execution issues and restore the same task ID, model revision, input/template, seed, layout/draw and generation parameters; no automatic unlimited retries",
+    "persistence_order": "persist complete raw output/finish metadata before scoring; on scoring implementation failure retain it and rerun only scoring",
+    "attempt_log": [
+      "task ID and frozen-spec hash",
+      "attempt number",
+      "fault type/time and retry record",
+      "completed raw-output location/hash",
+      "finish reason",
+      "scoring status/reasons"
+    ],
+    "completion_gate": "terminal task IDs exactly equal the frozen planned task IDs; pending_execution or pending_scoring means incomplete, even if another required rating is already invalid",
+    "logical_task_count": 22800,
+    "attempt_count": "failed/recovered execution attempts logged separately; attempts may exceed22800 but do not add draws or independent observations",
+    "implementation_status": "pure state/metric helpers and simulated checks only; no new big-model runner, persistent attempt journal or engine adapter implemented or integrated",
+    "old_runner_audit": "3B worker has save-before-done resume and saves model parse-invalid outputs; this does not prove the new runner meets the full execution contract"
+  }
+}
