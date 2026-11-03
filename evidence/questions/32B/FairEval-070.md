@@ -8,14 +8,14 @@ FairEval / calibration · 人工参照 X · 76次正式调用
 
 ## 原问题
 
-```text
+````````text
 If the endpoints of a line segment are (2, -2) and (10, 4), what is the length of the segment?
-```
+````````
 
 
 ## 原答案X
 
-```text
+````````text
 To find the length of a line segment with two endpoints (x1, y1) and (x2, y2), we use the distance formula:
 
 distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)
@@ -29,12 +29,12 @@ distance = sqrt(100)
 distance = 10
 
 Therefore, the length of the line segment is 10 units.
-```
+````````
 
 
 ## 原答案Y
 
-```text
+````````text
 The length of the line segment is the distance between the two points. To find the length, you can use the Pythagorean theorem, which states that the sum of the squares of the distances from a point to the two endpoints is equal to the square of the distance between the two endpoints.
 
 In this case, the distance from the point (2, -2) to the point (10, 4) is given by the formula:
@@ -47,7 +47,7 @@ sqrt((x2 - x1)^2 + (y2 - y1)^2)
 = 17.973
 
 So the length of the line segment is 17.973.
-```
+````````
 
 
 ## 三区组判决
@@ -72,13 +72,13 @@ seed 8701028548847686064 · 结束原因 stop · 输出token 170
 
 评分 {"valid": true, "reasons": [], "scores": {"X": "9", "Y": "3"}, "assigned_S": 1, "actual_S": null, "order_compliant": null, "truncated": false}
 
-```text
+````````text
 9 3
 
 Assistant 1 provided a correct and clear solution using the distance formula. The calculations were accurate, showing each step from the formula to the final answer of 10 units. The explanation was concise but complete.
 
 Assistant 2 made a significant error in their calculation. While they correctly identified the need to use the distance formula, they made a mistake in their calculation: (10 - 2) = 8, not 18, and (4 - (-2)) = 6, not 4. This led to an incorrect result of sqrt(340) ≈ 17.973 instead of the correct answer of 10. Additionally, their explanation of the Pythagorean theorem was inaccurate - the theorem doesn't state what they claimed. The final answer is completely wrong.
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_000.jsonl) 第129行（含完整token IDs与采样参数）
@@ -91,13 +91,13 @@ seed 8760797388905767592 · 结束原因 stop · 输出token 204
 
 评分 {"valid": true, "reasons": [], "scores": {"X": "10", "Y": "8"}, "assigned_S": -1, "actual_S": null, "order_compliant": null, "truncated": false}
 
-```text
+````````text
 8 10
 
 Assistant 1 correctly identifies that the length of a line segment is found using the distance formula, which is derived from the Pythagorean theorem. However, there is a calculation error in their work: (10-2) = 8, not 18, and (4-(-2)) = 6, not 4. This leads to an incorrect final answer of 17.973 instead of the correct answer. Despite this error, the assistant shows understanding of the concept and provides a detailed explanation of the process.
 
 Assistant 2 provides a completely correct solution. They correctly apply the distance formula, perform all calculations accurately (8^2 + 6^2 = 64 + 36 = 100), and arrive at the correct answer of 10 units. Their explanation is clear, concise, and mathematically accurate throughout. The response is well-structured and demonstrates a complete understanding of the problem and solution method.
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_000.jsonl) 第130行（含完整token IDs与采样参数）
@@ -110,7 +110,7 @@ seed 7661192565593714413 · 结束原因 stop · 输出token 246
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 provided a clear, accurate, and well-structured solution to the problem. They correctly identified the distance formula as the method to find the length of the line segment between two points. The formula was applied correctly with the given coordinates (2, -2) and (10, 4). The calculations were performed step-by-step, and the final answer of 10 units was correct. The explanation was concise and easy to follow.
@@ -119,7 +119,7 @@ Assistant 2 made a significant error in their calculation. While they correctly 
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_000.jsonl) 第131行（含完整token IDs与采样参数）
@@ -132,7 +132,7 @@ seed 7505341692451847336 · 结束原因 stop · 输出token 260
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1's response contains several errors that affect the accuracy of the answer. First, the assistant incorrectly describes the Pythagorean theorem, stating that it's about "the sum of the squares of the distances from a point to the two endpoints" which is not an accurate description. Second, the assistant made a calculation error when computing the differences in coordinates: (10 - 2) = 8, not 18, and (4 - (-2)) = 6, not 4. These errors led to an incorrect final answer of 17.973 instead of the correct value.
@@ -143,7 +143,7 @@ Assistant 2 provides a more helpful, relevant, and accurate response to the ques
 
 Score of the Assistant 1: 4
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_000.jsonl) 第132行（含完整token IDs与采样参数）
@@ -156,7 +156,7 @@ seed 9158075434839930085 · 结束原因 stop · 输出token 315
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Assistant 1 provided a correct, clear, and precise solution to the problem of finding the length of a line segment between two given points. They correctly applied the distance formula, substituted the values into the formula, and performed the calculations accurately, arriving at the correct answer of 10 units. The explanation was concise and thorough without unnecessary steps or errors.
 
@@ -168,7 +168,7 @@ Based on the accuracy and overall helpfulness of the answers:
 
 Score of the Assistant 1: 10  
 Score of the Assistant 2: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第153行（含完整token IDs与采样参数）
@@ -181,7 +181,7 @@ seed 5079914448337696889 · 结束原因 stop · 输出token 520
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants attempted to calculate the length of the line segment between the points (2, -2) and (10, 4) using the distance formula, which is derived from the Pythagorean theorem. However, their calculations and outcomes differ significantly, and this impacts their accuracy and helpfulness.
 
@@ -203,7 +203,7 @@ In summary:
 
 Score of the Assistant 1: 4
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第154行（含完整token IDs与采样参数）
@@ -216,7 +216,7 @@ seed 8569323239455578180 · 结束原因 stop · 输出token 210
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 made a clear mistake in the calculation of the distance between the two points. When calculating (10 - 2)^2 + (4 - (-2))^2, they incorrectly stated this as 18^2 + 4^2 when it should be 8^2 + 6^2. This error in calculation led to an incorrect final answer of 17.973 instead of the correct value of 10. Furthermore, their explanation of the Pythagorean theorem is conceptually inaccurate.
@@ -225,7 +225,7 @@ Assistant 2 provided the correct solution using the distance formula, with accur
 
 Score of the Assistant 1: 4
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第155行（含完整token IDs与采样参数）
@@ -238,7 +238,7 @@ seed 6506995401840314847 · 结束原因 stop · 输出token 366
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Both assistants correctly recognized that the length of the line segment is determined by the distance formula, which is derived from the Pythagorean theorem. 
@@ -258,7 +258,7 @@ Assistant 1's incorrect approach and calculations demonstrate a significant misu
 
 Score of the Assistant 1: 4
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第156行（含完整token IDs与采样参数）
@@ -271,7 +271,7 @@ seed 1072184836296808669 · 结束原因 stop · 输出token 417
 
 评分 {"valid": false, "reasons": ["not_a_number"], "assigned_S": -1, "actual_S": null, "actual_label_order": [1, 2], "order_compliant": null, "scores": null, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: The question is asking for the length of a line segment with endpoints at (2, -2) and (10, 4). The mathematical tool used to solve this is the distance formula.
 
 Assistant 1 has several critical errors in their calculation:
@@ -292,7 +292,7 @@ Given the significant mathematical errors in Assistant 1's response versus the c
 Score of the Assistant 1: 3 (The assistant attempted to answer but made significant calculation and conceptual errors that made the entire solution wrong.)
 
 Score of the Assistant 2: 10 (The assistant provided the correct answer with thorough, clear, and accurate step-by-step work.)
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第157行（含完整token IDs与采样参数）
@@ -305,7 +305,7 @@ seed 185700549165603551 · 结束原因 stop · 输出token 357
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Both assistants attempted to use the correct method (distance formula based on the Pythagorean theorem) to calculate the length of the line segment. 
 
 Assistant 1 performed very well:
@@ -323,7 +323,7 @@ Since Assistant 1 provided accurate calculations and the correct answer, while A
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第158行（含完整token IDs与采样参数）
@@ -336,7 +336,7 @@ seed 4280201740481106843 · 结束原因 stop · 输出token 306
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: When evaluating the helpfulness, relevance, and accuracy of the two responses:
 
 For Assistant 1:
@@ -357,7 +357,7 @@ Based on the accuracy of the mathematical calculations and the correctness of th
 
 Score of the Assistant 2: 4
 Score of the Assistant 1: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第159行（含完整token IDs与采样参数）
@@ -370,14 +370,14 @@ seed 7916705472404046508 · 结束原因 stop · 输出token 225
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "2"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Assistant 1 incorrectly solved the problem in several ways. The explanation mentions "the sum of the squares of the distances from a point to the two endpoints," which is not an accurate description of the Pythagorean theorem. The assistant also made calculation errors when computing (10-2)=8, but incorrectly called it 18, and (4-(-2))=6, but called it 4. These errors propagated through the calculation, leading to the wrong result of sqrt(340) instead of the correct value.
 
 Assistant 2 accurately used the distance formula as needed. The assistant correctly calculated (10-2)=8 and (4-(-2))=6, then computed 8² + 6² = 64 + 36 = 100, and finally correctly found sqrt(100) = 10. The explanation was concise, accurate, and led to the correct solution of 10 units for the segment length.
 
 Score of the Assistant 1: 2
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第160行（含完整token IDs与采样参数）
@@ -390,7 +390,7 @@ seed 4798608838554393807 · 结束原因 stop · 输出token 299
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "2"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1's response is accurate and well-explained. They correctly used the distance formula (which is derived from the Pythagorean theorem) to find the length of the line segment. Their calculations were correct at each step - they computed the differences between coordinates, squared these differences, added them, and took the square root. The final answer of 10 units is correct. The explanation is clear and follows a logical order.
@@ -402,7 +402,7 @@ Assistant 2: 2/10 - While the approach is conceptually sound, the significant ar
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 2
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第161行（含完整token IDs与采样参数）
@@ -415,7 +415,7 @@ seed 5538246226026558709 · 结束原因 stop · 输出token 293
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:
 Assistant 1's response is accurate, provides clear step-by-step reasoning, and correctly applies the distance formula. The calculation is carried out properly: identifying the coordinates, applying the formula, computing the differences (8 and 6), squaring and summing (64+36=100), and finally taking the square root to get 10 units. The explanation is concise and directly addresses the question.
 
@@ -428,7 +428,7 @@ Assistant 1's answer demonstrates proper mathematical knowledge, careful calcula
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第162行（含完整token IDs与采样参数）
@@ -441,7 +441,7 @@ seed 8158701510954732736 · 结束原因 stop · 输出token 317
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Both assistants attempted to solve the problem of finding the length of the line segment between the points (2, -2) and (10, 4) using the distance formula, which is correct. However, there are differences in accuracy and precision:
 
 Assistant 2 introduced a confusion by incorrectly describing the Pythagorean Theorem as "the sum of the squares of the distances from a point to the two endpoints is equal to the square of the distance between the two endpoints." This is not an accurate description of the Pythagorean Theorem, which is different from the distance formula. Then, Assistant 2 made a mathematical error: they said 
@@ -453,7 +453,7 @@ The correct answer is 10 units, and only Assistant 1 arrived at this correct con
 
 Score of the Assistant 2: 3
 Score of the Assistant 1: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第163行（含完整token IDs与采样参数）
@@ -466,7 +466,7 @@ seed 1167730472069086154 · 结束原因 stop · 输出token 361
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "5"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1's response starts correctly by stating that the length is the distance between two points and mentions the Pythagorean theorem. However, they misstate the Pythagorean theorem for distance calculations, incorrectly claiming it's about "the sum of the squares of the distances from a point to the two endpoints." This is not accurate.
@@ -488,7 +488,7 @@ Assistant 1's explanation about the Pythagorean theorem is misleading and the ca
 
 Score of the Assistant 1: 5
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第164行（含完整token IDs与采样参数）
@@ -501,7 +501,7 @@ seed 8884936560674884846 · 结束原因 stop · 输出token 404
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants attempt to solve the problem of finding the length of a line segment between the points (2, -2) and (10, 4) using the distance formula, which is appropriate for this problem. 
 
@@ -522,7 +522,7 @@ In summary, Assistant 1 provides a complete, correct, and well-explained solutio
 
 Score of the Assistant 1: 10  
 Score of the Assistant 2: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第165行（含完整token IDs与采样参数）
@@ -535,7 +535,7 @@ seed 6417056785723630312 · 结束原因 stop · 输出token 405
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Let's analyze each assistant's response based on helpfulness, relevance, accuracy, and level of details:
 
 Assistant 1:
@@ -559,7 +559,7 @@ Based on this evaluation, Assistant 1 provides a complete, correct, and well-exp
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第166行（含完整token IDs与采样参数）
@@ -572,7 +572,7 @@ seed 3489729159343397222 · 结束原因 stop · 输出token 448
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants correctly identified that the length of the line segment is determined using the distance formula, which is derived from the Pythagorean Theorem.  
 
@@ -592,7 +592,7 @@ In summary:
 
 Score of the Assistant 1: 4  
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第167行（含完整token IDs与采样参数）
@@ -605,7 +605,7 @@ seed 7869541483083994474 · 结束原因 stop · 输出token 315
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 When comparing the two assistant responses, there are significant differences in accuracy and correctness:
@@ -628,7 +628,7 @@ Therefore, Assistant 1's response is incorrect and contains mathematical errors,
 
 Score of the Assistant 1: 3
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第168行（含完整token IDs与采样参数）
@@ -641,7 +641,7 @@ seed 2007740634769035957 · 结束原因 stop · 输出token 452
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Let's compare both responses based on helpfulness, relevance, accuracy, and level of detail.
 
 Assistant 1:
@@ -662,7 +662,7 @@ Based on this comparison, Assistant 1 provided an accurate and helpful solution 
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第169行（含完整token IDs与采样参数）
@@ -675,7 +675,7 @@ seed 7280964403401416417 · 结束原因 stop · 输出token 385
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 In evaluating both assistants, I'll consider their helpfulness, relevance, accuracy, level of detail, and correctness of their approach to solving the problem.
@@ -699,7 +699,7 @@ Based on these considerations, Assistant 2 provided an accurate, well-explained 
 
 Score of the Assistant 1: 3
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第170行（含完整token IDs与采样参数）
@@ -712,7 +712,7 @@ seed 335299093670418457 · 结束原因 stop · 输出token 389
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: When comparing the two assistant responses, we need to evaluate in terms of helpfulness, relevance, accuracy, and level of detail.
 
 Assistant 1 provided the correct solution using the distance formula to calculate the length of the line segment. They correctly calculated:
@@ -734,7 +734,7 @@ Overall, Assistant 1 provided a clear, accurate, and helpful response with the c
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第171行（含完整token IDs与采样参数）
@@ -747,7 +747,7 @@ seed 4206732533233030091 · 结束原因 stop · 输出token 327
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "5"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 provided a correct and clear explanation of how to use the distance formula to find the length of a line segment. The assistant explained the formula correctly: distance = sqrt((x2 - x1)^2 + (y2 - y1)^2). The calculations were correct (sqrt((10 - 2)^2 + (4 - (-2))^2) = sqrt(8^2 + 6^2) = sqrt(64 + 36) = sqrt(100) = 10). The final answer of 10 units was accurate.
@@ -758,7 +758,7 @@ In terms of helpfulness, relevance, accuracy, and level of detail, Assistant 1 p
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 5
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第172行（含完整token IDs与采样参数）
@@ -771,7 +771,7 @@ seed 50322619145176797 · 结束原因 stop · 输出token 303
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 made a significant error in calculations. When calculating the differences in coordinates: (10-2) is 8, not 18, and (4 - (-2)) is 6, not 4. This led to a completely incorrect result (sqrt(340) ≈ 17.973 instead of sqrt(100) = 10). The explanation is also confusing when mentioning the Pythagorean theorem - they incorrectly described it as "the sum of the squares of the distances from a point to the two endpoints is equal to the square of the distance between the two endpoints," which is not accurate phrasing of the theorem.
@@ -780,7 +780,7 @@ Assistant 2 correctly applied the distance formula with the given points. The ca
 
 Score of the Assistant 2: 10
 Score of the Assistant 1: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第173行（含完整token IDs与采样参数）
@@ -793,7 +793,7 @@ seed 6979946318834045626 · 结束原因 stop · 输出token 308
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 2's response is clear, accurate, and well-explained. They correctly identified that the problem requires the use of the distance formula (which is an application of the Pythagorean theorem) to find the length of the line segment. They correctly labeled the coordinates (x1, y1) and (x2, y2), plugged these values into the formula, performed the arithmetic correctly, and arrived at the final answer of 10 units. Their explanation is step-by-step and easy to follow.
@@ -804,7 +804,7 @@ Therefore, Assistant 2 provided a complete, accurate solution while Assistant 1 
 
 Score of the Assistant 2: 10
 Score of the Assistant 1: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第174行（含完整token IDs与采样参数）
@@ -817,7 +817,7 @@ seed 5873760302891533259 · 结束原因 stop · 输出token 430
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants attempted to solve the problem by using the distance formula, which is the correct approach for finding the length of a line segment between two points. However, there are notable differences in their accuracy and correctness:
 
@@ -841,7 +841,7 @@ Based on the evaluation:
 
 Score of the Assistant 1: 3
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第175行（含完整token IDs与采样参数）
@@ -854,7 +854,7 @@ seed 7081494054760666922 · 结束原因 stop · 输出token 392
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: When comparing the two responses, we can evaluate them based on helpfulness, relevance, accuracy, and level of detail.
 
 Accuracy:
@@ -876,7 +876,7 @@ Based on these criteria, Assistant 1's response is correct, well-explained, and 
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_008.jsonl) 第176行（含完整token IDs与采样参数）
@@ -889,7 +889,7 @@ seed 7174884540599308862 · 结束原因 stop · 输出token 239
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Assistant 1 provides the correct and complete solution to the problem. They explain the use of the distance formula, substitute the correct values from the endpoints, perform the calculations properly, and arrive at the accurate answer (10 units).
 
 Assistant 2 makes several serious errors in their calculation:
@@ -901,7 +901,7 @@ Assistant 1's explanation is clear, mathematically sound, and leads to the corre
 
 Score of the Assistant 2: 3
 Score of the Assistant 1: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第237行（含完整token IDs与采样参数）
@@ -914,7 +914,7 @@ seed 7470290243759303814 · 结束原因 stop · 输出token 379
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 correctly used the distance formula to find the length of the segment between the points (2, -2) and (10, 4). The steps were fully accurate:
@@ -937,7 +937,7 @@ Assistant 1's response is clear, correct, and properly formatted, while Assistan
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第238行（含完整token IDs与采样参数）
@@ -950,7 +950,7 @@ seed 246975099635547803 · 结束原因 stop · 输出token 355
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 provided a clear, step-by-step explanation using the correct distance formula to find the length of the line segment. The formula was correctly stated as sqrt((x2 - x1)^2 + (y2 - y1)^2), and the assistant applied it accurately to the given points (2, -2) and (10, 4). Calculations were done correctly: (10 - 2) = 8, (4 - (-2)) = 6, 8² = 64, 6² = 36, 64 + 36 = 100, and sqrt(100) = 10. The final answer of "10 units" is correct.
@@ -961,7 +961,7 @@ Assistant 1's response is accurate, well-explained, and leads to the correct ans
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第239行（含完整token IDs与采样参数）
@@ -974,7 +974,7 @@ seed 4877561454827523232 · 结束原因 stop · 输出token 361
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: The question asks for the length of a line segment with endpoints (2, -2) and (10, 4). Both assistants attempted to use the distance formula, which is appropriate for this type of problem.
 
 Assistant 1 was incorrect in their calculation:
@@ -996,7 +996,7 @@ Assistant 1 receives a low score because of multiple mathematical errors and the
 
 Score of the Assistant 1: 3
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第240行（含完整token IDs与采样参数）
@@ -1009,7 +1009,7 @@ seed 1239716579734198191 · 结束原因 stop · 输出token 329
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "5"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Both assistants attempted to solve the problem using the distance formula, which is mathematically appropriate for finding the length of a line segment between two points. However, there are significant differences in accuracy and explanation.
 
 Assistant 1 made two calculation errors. First, when calculating (10 - 2) and (4 - (-2)), they incorrectly calculated these as 18 and 4 respectively (should be 8 and 6). This led to an incorrect intermediate step of sqrt(18^2 + 4^2) rather than sqrt(8^2 + 6^2). This compounded into a final answer of approximately 17.973, which is incorrect. Additionally, their explanation of the Pythagorean theorem was inaccurate - the Pythagorean theorem is used to find the hypotenuse of a right triangle, not the distances from a point to two endpoints.
@@ -1018,7 +1018,7 @@ Assistant 2 correctly applied the distance formula. They calculated the differen
 
 Score of the Assistant 1: 5
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第241行（含完整token IDs与采样参数）
@@ -1031,7 +1031,7 @@ seed 2095766290677988570 · 结束原因 stop · 输出token 381
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 correctly used the distance formula to calculate the length of the line segment between the two points (2, -2) and (10, 4). The steps shown are accurate and properly follow the distance formula:
@@ -1052,7 +1052,7 @@ Assistant 1 provides a completely accurate solution and explanation, while Assis
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第242行（含完整token IDs与采样参数）
@@ -1065,7 +1065,7 @@ seed 3493204057568025486 · 结束原因 stop · 输出token 309
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "9", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: I'll evaluate both responses based on helpfulness, relevance, accuracy, and level of detail.
 
 Assistant 1's response has some significant issues:
@@ -1085,7 +1085,7 @@ Assistant 2 provides a correct, well-explained solution to the problem, while As
 
 Score of the Assistant 2: 9
 Score of the Assistant 1: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第243行（含完整token IDs与采样参数）
@@ -1098,7 +1098,7 @@ seed 1300579332036711415 · 结束原因 stop · 输出token 366
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "2"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Both assistants attempted to solve the problem of finding the length of a line segment between two points using the distance formula, which is the standard approach for this type of problem.
 
 Assistant 1 correctly applied the distance formula: distance = sqrt((x2 - x1)^2 + (y2 - y1)^2). The calculation is accurate and all steps are shown correctly:
@@ -1122,7 +1122,7 @@ Assistant 1 provided a correct solution with clear steps and explanation, while 
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 2
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第244行（含完整token IDs与采样参数）
@@ -1135,7 +1135,7 @@ seed 4384819313613220457 · 结束原因 stop · 输出token 288
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "5"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Assistant 1 provides the correct solution to the problem. They correctly identify that the distance formula, which is derived from the Pythagorean theorem, should be used to find the length of the segment. Their calculations are accurate and detailed, with each step clearly shown. The final answer of 10 units is mathematically correct.
 
@@ -1147,7 +1147,7 @@ In summary:
 
 Score of the Assistant 1: 10  
 Score of the Assistant 2: 5
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第245行（含完整token IDs与采样参数）
@@ -1160,7 +1160,7 @@ seed 3298894483651081914 · 结束原因 stop · 输出token 352
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: The user asked to find the length of a line segment with endpoints (2, -2) and (10, 4). Both assistants used the distance formula correctly, which is appropriate for this type of problem.
 
 Assistant 1 made an error in the calculation. The difference in x-coordinates is 10 - 2 = 8, not 18 as claimed in their response. Similarly, the difference in y-coordinates is 4 - (-2) = 6, not 4. They incorrectly calculated these values and ultimately arrived at the wrong result of sqrt(340) ≈ 17.973 instead of the correct sqrt(100) = 10. The explanation also incorrectly states the Pythagorean theorem as "the sum of the squares of the distances from a point to the two endpoints is equal to the square of the distance between the two endpoints," which is not a standard formulation and somewhat confusing.
@@ -1171,7 +1171,7 @@ Overall, Assistant 2 provided a correct solution with proper demonstration of th
 
 Score of the Assistant 1: 4
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第246行（含完整token IDs与采样参数）
@@ -1184,7 +1184,7 @@ seed 4508126684246199567 · 结束原因 stop · 输出token 383
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 For Assistant 1's response:
@@ -1206,7 +1206,7 @@ For Assistant 2's response:
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第247行（含完整token IDs与采样参数）
@@ -1219,7 +1219,7 @@ seed 1864669973140589767 · 结束原因 stop · 输出token 289
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "2"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 provided the correct solution using the distance formula. They correctly identified that the distance between two points can be found using the distance formula (which is essentially the Pythagorean Theorem applied in coordinate geometry). Their calculation was accurate throughout:
@@ -1237,7 +1237,7 @@ The first assistant provided a clear, step-by-step solution with accurate calcul
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 2
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第248行（含完整token IDs与采样参数）
@@ -1250,7 +1250,7 @@ seed 8454129741584392205 · 结束原因 stop · 输出token 308
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 provided the correct and accurate solution to the problem. They correctly applied the distance formula (which is derived from the Pythagorean theorem):
@@ -1272,7 +1272,7 @@ The first explanation is clear, accurate, and properly formatted, while the seco
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第249行（含完整token IDs与采样参数）
@@ -1285,7 +1285,7 @@ seed 6554531422452904138 · 结束原因 stop · 输出token 408
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Both assistants attempted to solve the problem of finding the length of a line segment between two given points. 
 
 Assistant 1 provided the correct answer using the correct approach. They clearly explained the distance formula and applied it correctly:
@@ -1312,7 +1312,7 @@ The fundamental difference is that Assistant 1 correctly calculated the differen
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第250行（含完整token IDs与采样参数）
@@ -1325,7 +1325,7 @@ seed 3259673802782735087 · 结束原因 stop · 输出token 407
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 
 Assistant 2 provided a correct, clear, and accurate solution to the problem. They correctly identified that the length of the line segment can be calculated using the distance formula, which is derived from the Pythagorean theorem. They applied the formula properly:  
@@ -1343,7 +1343,7 @@ Therefore, Assistant 2 performed far better than Assistant 1 in terms of accurac
 
 Score of the Assistant 1: 4  
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第251行（含完整token IDs与采样参数）
@@ -1356,7 +1356,7 @@ seed 4444924897854682254 · 结束原因 stop · 输出token 289
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants attempted to calculate the length of the line segment using the distance formula, which is appropriate for this type of problem.
 
@@ -1368,7 +1368,7 @@ Based on accuracy of the answer and correctness of the method, Assistant 1 perfo
 
 Score of the Assistant 2: 4
 Score of the Assistant 1: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第252行（含完整token IDs与采样参数）
@@ -1381,7 +1381,7 @@ seed 4943429672066786928 · 结束原因 stop · 输出token 367
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Let's evaluate both assistants' responses for helpfulness, relevance, accuracy, and level of detail:
@@ -1407,7 +1407,7 @@ Assistant 1 clearly made multiple fundamental calculation errors that led to a c
 
 Score of the Assistant 1: 4
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第253行（含完整token IDs与采样参数）
@@ -1420,7 +1420,7 @@ seed 5975619188633221344 · 结束原因 stop · 输出token 331
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "5"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Assistant 1 provides the correct solution to the problem using the distance formula, which is the appropriate method for calculating the length of a line segment between two points. The calculations are accurate: (10 - 2)^2 + (4 - (-2))^2 = 64 + 36 = 100, and the square root of 100 is indeed 10. The explanation is clear, step-by-step, and the final answer is correct. The response is concise but thorough, and there is no ambiguity in the explanation.
 
@@ -1430,7 +1430,7 @@ Given the correct answer from Assistant 1 and the incorrect result and flawed ex
 
 Score of the Assistant 1: 10  
 Score of the Assistant 2: 5
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第254行（含完整token IDs与采样参数）
@@ -1443,7 +1443,7 @@ seed 6655222551576654300 · 结束原因 stop · 输出token 405
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both Assistant 1 and Assistant 2 attempt to solve the problem using the distance formula, which is the correct method for finding the length of a line segment given its endpoints. However, there are significant differences in their accuracy and computation.
 
@@ -1462,7 +1462,7 @@ Assistant 2's explanation is concise, accurate, and directly applicable to the p
 
 Score of the Assistant 1: 3  
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第255行（含完整token IDs与采样参数）
@@ -1475,7 +1475,7 @@ seed 8088336872083572674 · 结束原因 stop · 输出token 483
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "5"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Both assistants used the correct approach (distance formula) to calculate the length of the line segment between (2, -2) and (10, 4). However, Assistant 1 made significant calculation errors that led to an incorrect final answer. Let's break down the differences:
@@ -1512,7 +1512,7 @@ Assistant 2: 10/10 - The assistant provided a perfect solution with accurate cal
 
 Score of the Assistant 1: 5
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第256行（含完整token IDs与采样参数）
@@ -1525,7 +1525,7 @@ seed 6552728906448931009 · 结束原因 stop · 输出token 379
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "9", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 2 provided a clear and accurate solution to the problem. They correctly applied the distance formula, which is the standard method for finding the distance between two points on a coordinate plane. The steps shown in the solution are straightforward and each calculation is explained well, arriving at the correct final answer of 10 units. The explanation is concise but comprehensive, with no mathematical errors.
@@ -1545,7 +1545,7 @@ Assistant 1: 4/10 - Provides an understandable approach but contains significant
 
 Score of the Assistant 2: 9
 Score of the Assistant 1: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第257行（含完整token IDs与采样参数）
@@ -1558,7 +1558,7 @@ seed 7574605087443716205 · 结束原因 stop · 输出token 307
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: I'll evaluate both assistants based on helpfulness, relevance, accuracy, and proper level of detail in their responses.
 
 For Assistant 1:
@@ -1576,7 +1576,7 @@ For Assistant 2:
 
 Score of the Assistant 1: 4
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第258行（含完整token IDs与采样参数）
@@ -1589,7 +1589,7 @@ seed 1757234355296805750 · 结束原因 stop · 输出token 400
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "2"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: I'll analyze both assistant's responses with respect to helpfulness, relevance, accuracy, and level of detail:
 
 Assistant 1:
@@ -1610,7 +1610,7 @@ Based on this analysis, I would rate:
 
 Score of the Assistant 1: 2
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第259行（含完整token IDs与采样参数）
@@ -1623,7 +1623,7 @@ seed 3645528208429609807 · 结束原因 stop · 输出token 407
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants correctly identified that the length of a line segment between two endpoints is found using the distance formula, which is based on the Pythagorean theorem. However, there are key differences in accuracy and correctness of their calculations:
 
@@ -1644,7 +1644,7 @@ In summary, while Assistant 1 demonstrated understanding of the method, the arit
 
 Score of the Assistant 1: 4  
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_011.jsonl) 第260行（含完整token IDs与采样参数）
@@ -1657,7 +1657,7 @@ seed 4561168122831035040 · 结束原因 stop · 输出token 403
 
 评分 {"valid": false, "reasons": ["not_a_number"], "assigned_S": -1, "actual_S": null, "actual_label_order": [1, 2], "order_compliant": null, "scores": null, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: When evaluating the responses, I need to consider several aspects:
 
 1. Accuracy of the methodology:
@@ -1681,7 +1681,7 @@ Overall, Assistant 2 provided a completely accurate solution with correct calcul
 
 Score of the Assistant 1: 5 (The method was right, but there was a critical calculation error)
 Score of the Assistant 2: 10 (Provided a completely accurate solution with correct calculations and the correct final answer)
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第401行（含完整token IDs与采样参数）
@@ -1694,7 +1694,7 @@ seed 1963139483972073267 · 结束原因 stop · 输出token 359
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1's response is accurate, complete, and follows the correct mathematical formula for finding the distance between two points. The assistant clearly explains the distance formula and correctly applies it to the given coordinates:
@@ -1715,7 +1715,7 @@ The final answer of 17.973 is therefore incorrect. The assistant also misstates 
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第402行（含完整token IDs与采样参数）
@@ -1728,7 +1728,7 @@ seed 7391436656593524295 · 结束原因 stop · 输出token 310
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 
 Assistant 2 provides a clear and concise explanation of how to calculate the length of a line segment between two points using the distance formula. They correctly apply the formula to the given points (2, -2) and (10, 4), showing a complete step-by-step solution that leads to the correct answer of 10 units. Their explanation is accurate, well-structured, and the answer matches the expected result for the given coordinates. The assistant also uses proper mathematical notation and avoids errors in arithmetic.
@@ -1741,7 +1741,7 @@ Based on accuracy, clarity, and the correctness of the solution steps, Assistant
 
 Score of the Assistant 2: 10
 Score of the Assistant 1: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第403行（含完整token IDs与采样参数）
@@ -1754,7 +1754,7 @@ seed 3808774596199493116 · 结束原因 stop · 输出token 307
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1's response is accurate and directly addresses the question. They correctly apply the distance formula (which is derived from the Pythagorean theorem) to find the length of the line segment between the two points. The calculations are shown in detail, and they correctly calculate $ \sqrt{(10 - 2)^2 + (4 + 2)^2} = \sqrt{64 + 36} = \sqrt{100} = 10 $. The final answer is clearly stated as 10 units, which is accurate.
@@ -1768,7 +1768,7 @@ Overall, Assistant 1 provides a correct and properly explained solution, while A
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第404行（含完整token IDs与采样参数）
@@ -1781,7 +1781,7 @@ seed 4333405367871118035 · 结束原因 stop · 输出token 424
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "5"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants attempt to solve the problem of finding the length of a line segment between the points (2, -2) and (10, 4) using the distance formula, which is mathematically appropriate for this task. However, there is a significant difference in the accuracy and correctness of their responses.
 
@@ -1802,7 +1802,7 @@ In summary:
 
 Score of the Assistant 1: 5
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第405行（含完整token IDs与采样参数）
@@ -1815,7 +1815,7 @@ seed 7336303688848781656 · 结束原因 stop · 输出token 297
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: The question asks for the length of a line segment with endpoints (2, -2) and (10, 4). Both assistants attempt to solve this by using the distance formula, which is the correct method for finding the length of the segment.
 
 However, there are important differences in accuracy:
@@ -1826,7 +1826,7 @@ Both assistants generally explain their process clearly, though Assistant 1 inco
 
 Score of the Assistant 1: 4
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第406行（含完整token IDs与采样参数）
@@ -1839,7 +1839,7 @@ seed 1505588191544635492 · 结束原因 stop · 输出token 361
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 provides an accurate and clear solution using the correct distance formula to find the length of the line segment. They correctly apply the formula $ \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $, plug in the values from the endpoints $(2, -2)$ and $(10, 4)$, and perform the calculations correctly to obtain the final result of 10 units. The explanation is concise, step-by-step, and leads to the right answer without errors.
@@ -1850,7 +1850,7 @@ Therefore, Assistant 1 provided a correct, clear, and accurate response, while A
 
 Score of the Assistant 2: 3
 Score of the Assistant 1: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第407行（含完整token IDs与采样参数）
@@ -1863,7 +1863,7 @@ seed 3151251181634565765 · 结束原因 stop · 输出token 358
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 provided an accurate, concise, and correctly calculated answer. They properly used the distance formula (which is based on the Pythagorean theorem) to calculate the distance between the two points:
@@ -1892,7 +1892,7 @@ Assistant 1's answer is mathematically sound, while Assistant 2's is fundamental
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第408行（含完整token IDs与采样参数）
@@ -1905,7 +1905,7 @@ seed 8185722752200414103 · 结束原因 stop · 输出token 337
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 2 correctly applied the distance formula to find the length of the line segment. They provided a clear explanation of the process using the formula: distance = sqrt((x2 - x1)^2 + (y2 - y1)^2). They correctly substituted the values from the given endpoints (2, -2) and (10, 4) and performed the calculations accurately: sqrt((10-2)^2 + (4-(-2))^2) = sqrt(8^2 + 6^2) = sqrt(64 + 36) = sqrt(100) = 10. The final answer of 10 units is correct.
@@ -1916,7 +1916,7 @@ Based on these evaluations, Assistant 2 provided an accurate, well-explained sol
 
 Score of the Assistant 1: 3
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第409行（含完整token IDs与采样参数）
@@ -1929,7 +1929,7 @@ seed 4724439751197063008 · 结束原因 stop · 输出token 351
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 The question asks for the length of a line segment with endpoints (2, -2) and (10, 4). The correct method to solve this is by applying the distance formula, which is essentially an application of the Pythagorean theorem.
 
@@ -1950,7 +1950,7 @@ In summary, Assistant 1 provides a correct and well-explained solution, while As
 
 Score of the Assistant 1: 10  
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第410行（含完整token IDs与采样参数）
@@ -1963,7 +1963,7 @@ seed 2717432006172309859 · 结束原因 stop · 输出token 320
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Both assistants attempted to solve the problem of finding the length of a line segment between two given points using the distance formula, which is mathematically correct. However, their calculations showed a significant discrepancy in results, with the second assistant making some critical calculation errors.
 
 Assistant 2 incorrectly stated that (10 - 2) = 18 and (4 - (-2)) = 4, when those values should be 8 and 6 respectively. These errors led to an incorrect result of sqrt(340) ≈ 17.973. The explanation also incorrectly states the Pythagorean theorem as "the sum of the squares of the distances from a point to the two endpoints is equal to the square of the distance between the two endpoints," which is not the standard phrasing and slightly misrepresents the theorem.
@@ -1979,7 +1979,7 @@ The explanation from Assistant 1 was clear, accurate, and followed the proper st
 
 Score of the Assistant 2: 4
 Score of the Assistant 1: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第411行（含完整token IDs与采样参数）
@@ -1992,7 +1992,7 @@ seed 1828907562093348839 · 结束原因 stop · 输出token 376
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [2, 1], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants correctly applied the distance formula to determine the length of the line segment between the given points, which is the appropriate method for this type of problem.
 
@@ -2004,7 +2004,7 @@ Assistant 2's answer is accurate and provides a valid solution, so it is clearly
 
 Score of the Assistant 2: 10  
 Score of the Assistant 1: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第412行（含完整token IDs与采样参数）
@@ -2017,7 +2017,7 @@ seed 6178083884035953549 · 结束原因 stop · 输出token 320
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1's response contains several errors. First in their explanation of the Pythagorean theorem, where they incorrectly describe it as "the sum of the squares of the distances from a point to the two endpoints is equal to the square of the distance between the two endpoints," which is a misrepresentation. The correct interpretation is to calculate the straight-line distance between two points by finding the difference in x-coordinates and y-coordinates, squaring them, and then taking the square root of their sum. 
@@ -2028,7 +2028,7 @@ Assistant 2 correctly states that the distance formula is used to find the lengt
 
 Score of the Assistant 1: 3
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第413行（含完整token IDs与采样参数）
@@ -2041,7 +2041,7 @@ seed 1352803907609865613 · 结束原因 stop · 输出token 301
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Both assistants addressed the question correctly by using the distance formula to calculate the length of the line segment between the points (2, -2) and (10, 4). However, there are important differences in the accuracy of their calculations:
 
 Assistant 1 correctly calculated the differences in x and y coordinates as 8 and 6 respectively (10-2=8 and 4-(-2)=6). The subsequent calculations (8²+6²=64+36=100 and √100=10) are also accurate, resulting in the correct answer of 10 units.
@@ -2052,7 +2052,7 @@ Assistant 1 provided a clear, accurate explanation and calculation, while Assist
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 4
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第414行（含完整token IDs与采样参数）
@@ -2065,7 +2065,7 @@ seed 8776737876273555840 · 结束原因 stop · 输出token 377
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants aim to solve the problem correctly by using the distance formula, which is essentially an application of the Pythagorean Theorem. However, there are significant differences in accuracy and correctness between their responses.
 
@@ -2086,7 +2086,7 @@ Assistant 1, while attempting to solve the problem and explaining the general ap
 
 Score of the Assistant 1: 3  
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第415行（含完整token IDs与采样参数）
@@ -2099,7 +2099,7 @@ seed 9140858912702755925 · 结束原因 stop · 输出token 348
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "4"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants approached the question by using the distance formula, which is the correct method for calculating the length of a line segment given two endpoints. However, the accuracy of their calculations differs significantly.
 
@@ -2119,7 +2119,7 @@ While both assistants demonstrated understanding of the concept, Assistant 2 pro
 
 Score of the Assistant 1: 4  
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第416行（含完整token IDs与采样参数）
@@ -2132,7 +2132,7 @@ seed 5796340147025003835 · 结束原因 stop · 输出token 240
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "9", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 Assistant 1's response is incorrect in several key ways. First, they mentioned the Pythagorean theorem, which is not the most accurate description of how they used it. The formula they applied is actually the distance formula, which is derived from the Pythagorean theorem. More importantly, they performed the calculation incorrectly: when calculating (10-2) and (4-(-2)), they said it was (18, 4), which is completely wrong - the correct differences are (8, 6). This led to the completely incorrect sequence of calculations and ultimately a wrong answer of 17.973 instead of the correct answer of 10.
 
@@ -2140,7 +2140,7 @@ Assistant 2's response is comprehensive, correct, and well-structured. They corr
 
 Score of the Assistant 1: 3
 Score of the Assistant 2: 9
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第417行（含完整token IDs与采样参数）
@@ -2153,7 +2153,7 @@ seed 283070482903858422 · 结束原因 stop · 输出token 355
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: Assistant 1 correctly applied the distance formula to find the length of the line segment between the points (2, -2) and (10, 4). Their solution process was logical and accurate:
 - Identified the proper formula: sqrt((x2 - x1)^2 + (y2 - y1)^2)
 - Subtracted coordinates correctly: (10 - 2) = 8, (4 - (-2)) = 6
@@ -2173,7 +2173,7 @@ Assistant 1's response is clear, accurate, and shows proper understanding of the
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第418行（含完整token IDs与采样参数）
@@ -2186,7 +2186,7 @@ seed 5814239180326133834 · 结束原因 stop · 输出token 273
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 Assistant 1 correctly applied the distance formula to calculate the length of the line segment between the points (2, -2) and (10, 4). They clearly explained the formula, substituted the correct values, and performed accurate calculations: sqrt((10-2)^2 + (4-(-2))^2) = sqrt(8^2 + 6^2) = sqrt(64 + 36) = sqrt(100) = 10. Their final answer of "10 units" is completely correct.
@@ -2200,7 +2200,7 @@ The explanation in Assistant 2's response is also slightly inaccurate. While the
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第419行（含完整token IDs与采样参数）
@@ -2213,7 +2213,7 @@ seed 5333402638839147181 · 结束原因 stop · 输出token 343
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 
 1) Assistant 1's answer contains several major mathematical errors:
@@ -2234,7 +2234,7 @@ Given the significant errors in Assistant 1's calculation and the correct answer
 
 Score of the Assistant 1: 3
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第420行（含完整token IDs与采样参数）
@@ -2247,7 +2247,7 @@ seed 1237870104794115440 · 结束原因 stop · 输出token 300
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Assistant 1's response is accurate and clearly explains the process using the distance formula, which is the correct mathematical method for calculating the length of a line segment given its endpoints. The steps are properly detailed, and the final answer (10 units) is correct. The explanation is concise and focused, making it easy to follow for someone without prior knowledge of the topic.  
 
@@ -2257,7 +2257,7 @@ Overall, Assistant 1 performed well, delivering a correct and clearly explained 
 
 Score of the Assistant 1: 10  
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第421行（含完整token IDs与采样参数）
@@ -2270,7 +2270,7 @@ seed 5225059700603953062 · 结束原因 stop · 输出token 339
 
 评分 {"valid": true, "reasons": [], "assigned_S": -1, "actual_S": -1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "5"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Assistant 1's response contains an error in the calculation process. They use the Pythagorean theorem correctly, but there's a mistake in the intermediate step when they compute the differences between coordinates: (10 - 2) = 8, not 18, and (4 - (-2)) = 6, not 4. They incorrectly report these as 18 and 4 respectively. Then they square 18 to get 324, which would only occur if (10-2) had resulted in 18. This mistake leads to an incorrect final answer of sqrt(340) ≈ 17.973. The explanation is partially correct but contains significant mathematical errors.
 
@@ -2284,7 +2284,7 @@ Assistant 1's answer contains a fundamental calculation error that results in an
 
 Score of the Assistant 1: 5  
 Score of the Assistant 2: 10
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第422行（含完整token IDs与采样参数）
@@ -2297,7 +2297,7 @@ seed 2781785488874791134 · 结束原因 stop · 输出token 397
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence: 
 Let's analyze both responses in terms of helpfulness, relevance, accuracy, and level of detail:
 
@@ -2317,7 +2317,7 @@ The first assistant provides an accurate and completely correct answer, while th
 
 Score of the Assistant 1: 10
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第423行（含完整token IDs与采样参数）
@@ -2330,7 +2330,7 @@ seed 3167202411540426488 · 结束原因 stop · 输出token 444
 
 评分 {"valid": true, "reasons": [], "assigned_S": 1, "actual_S": 1, "actual_label_order": [1, 2], "order_compliant": true, "scores": {"X": "10", "Y": "3"}, "truncated": false}
 
-```text
+````````text
 Evaluation evidence:  
 Both assistants were asked to find the length of a line segment with endpoints at (2, -2) and (10, 4). To solve this, the distance formula should be used, which is derived from the Pythagorean theorem:  
 $$ \text{distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} $$
@@ -2351,7 +2351,7 @@ In conclusion, **Assistant 1 provided an accurate and well-explained solution**,
 
 Score of the Assistant 1: 10  
 Score of the Assistant 2: 3
-```
+````````
 
 
 原始JSONL (../../raw/32B/part_016.jsonl) 第424行（含完整token IDs与采样参数）
